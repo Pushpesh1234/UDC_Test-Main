@@ -1,0 +1,221 @@
+/* reset/box sizing to avoid surprises */
+* { box-sizing: border-box; }
+
+/* parent background and spacing (matches reference) */
+.features-wrapper {
+  width: 100% !important;
+  background: #f5f7fb !important;   /* reference background */
+  padding: 110px 0 !important;      /* large top/bottom spacing */
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  gap: 110px !important;            /* wide gap like reference */
+  margin: 0 auto !important;
+}
+
+/* each card size and centering */
+.feature-box {
+  width: 300px !important;          /* exact card width */
+  text-align: center !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* MONITOR IMAGE (the critical part) */
+.feature-img,
+.monitor-screen {
+  width: 290px !important;          /* exact monitor width to match reference */
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto 30px auto !important; /* auto centered, bottom space */
+  object-fit: contain !important;
+  border-radius: 6px !important;   /* slight rounding to match reference */
+  -webkit-backface-visibility: hidden !important;
+}
+
+/* small label above title */
+.feature-small-title {
+  font-family: "Helvetica Neue", Arial, sans-serif !important;
+  font-size: 15px !important;
+  color: #777 !important;
+  font-weight: 600 !important;
+  margin: 6px 0 10px 0 !important;
+  letter-spacing: 0.6px !important;
+  text-transform: none !important;
+}
+
+/* main uppercase title */
+.feature-title {
+  font-family: "Helvetica Neue", Arial, sans-serif !important;
+  font-size: 22px !important;      /* smaller than your previous size */
+  font-weight: 700 !important;
+  color: #222 !important;
+  text-transform: uppercase !important;
+  line-height: 1.35 !important;
+  margin: 0 0 8px 0 !important;
+  letter-spacing: 0.6px !important;
+}
+
+/* thin underline below title */
+.feature-underline {
+  width: 30px !important;
+  height: 2px !important;
+  background-color: #111 !important;
+  margin: 8px auto 22px auto !important;
+}
+
+/* body text copy */
+.feature-text {
+  width: 90% !important;           /* narrower column like reference */
+  margin: 0 auto 22px auto !important;
+  font-family: "Georgia", "Times New Roman", serif !important;
+  font-size: 15px !important;
+  color: #555 !important;
+  line-height: 1.7 !important;
+  font-weight: 400 !important;
+}
+
+/* bottom link */
+.feature-link {
+  font-family: "Helvetica Neue", Arial, sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #111 !important;
+  text-decoration: none !important;
+}
+
+/* subtle hover (optional) */
+.feature-box:hover .feature-img {
+  transform: translateY(-6px) !important;
+  transition: transform 260ms ease !important;
+}
+
+/* responsive: stack on small screens */
+@media (max-width: 960px) {
+  .features-wrapper {
+    gap: 28px !important;
+    padding: 60px 20px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .feature-box {
+    width: 100% !important;
+    max-width: 520px !important;
+  }
+
+  .feature-img {
+    width: 100% !important;
+    max-width: 420px !important;
+  }
+}
+
+.udc-intro-text {
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto 20px auto;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #222;
+  padding: 0 20px;
+}
+
+
+/* --------------------------------------------------
+   ABOUT UDC SECTION (IMAGE LEFT + TEXT RIGHT)
+-------------------------------------------------- */
+
+.udc-about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 0 20px;
+}
+
+/* LEFT IMAGE BOX */
+.udc-about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.udc-about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* RIGHT SIDE CONTENT */
+.udc-about-content {
+  flex: 1.1;
+}
+
+.udc-about-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+/* Red underline for heading */
+.udc-about-content h2::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background: #d62828;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  border-radius: 2px;
+}
+
+.udc-about-content p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+/* --------------------------------------------------
+   RESPONSIVE DESIGN
+-------------------------------------------------- */
+
+@media (max-width: 992px) {
+  .udc-about-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .udc-about-content h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .udc-about-content {
+    text-align: center;
+  }
+
+  .udc-about-image img {
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 600px) {
+  .udc-about-section {
+    margin: 50px auto;
+  }
+
+  .udc-about-content p {
+    font-size: 16px;
+  }
+}
