@@ -44,7 +44,7 @@ function App() {
 
     // Remove any hash (e.g. #contact) or trailing /contact on initial load
     const { hash, pathname, search } = window.location;
-    const base = "/UDC_Test";
+    const base = "/UDC_Test-Main";
     if (hash === "#contact" || pathname.endsWith("/contact")) {
       const newUrl = base + (search || "");
       window.history.replaceState(null, "", newUrl);
@@ -55,7 +55,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter basename="/UDC_Test">
+    <BrowserRouter basename="/UDC_Test-Main">
       <div className="font-sans">
         <Navbar
   onAuthOpen={() => setShowAuth(true)}
