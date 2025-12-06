@@ -20,7 +20,7 @@ const COPILOT_BENEFITS = [
 ];
 
 const CoPilotAIPage = () => {
-    const heroImagePath = "/UDC_Test/assets/img/copilot.jpg"; 
+    const heroImagePath = "/UDC_Test-Main/assets/img/copilot.jpg"; 
 
     return (
         <div className="crm-solution-container">

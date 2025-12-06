@@ -19,7 +19,7 @@ const FeaturesSection = () => {
         {/* LEFT IMAGE */}
         <div className="udc-about-image">
           <img 
-            src="/UDC_Test/assets/img/udc1.jpg" 
+            src="/UDC_Test-Main/assets/img/udc1.jpg" 
             alt="UDC About"
           />
         </div>
@@ -60,7 +60,7 @@ const FeaturesSection = () => {
         {/* BOX 1 */}
         <div className="feature-box">
           <div className="monitor-frame">
-            <img src="/UDC_Test/assets/img/crm1.jpg" alt="CRM" className="monitor-screen" />
+            <img src="/UDC_Test-Main/assets/img/crm1.jpg" alt="CRM" className="monitor-screen" />
           </div>
 
           <h4 className="feature-small-title">Bitrix24</h4>
@@ -80,7 +80,7 @@ const FeaturesSection = () => {
         {/* BOX 2 */}
         <div className="feature-box">
           <div className="monitor-frame">
-            <img src="/UDC_Test/assets/img/Planner.png" alt="Project" className="monitor-screen" />
+            <img src="/UDC_Test-Main/assets/img/Planner.png" alt="Project" className="monitor-screen" />
           </div>
 
           <h4 className="feature-small-title">Zoho</h4>
@@ -101,7 +101,7 @@ const FeaturesSection = () => {
         {/* BOX 3 */}
         <div className="feature-box">
           <div className="monitor-frame">
-            <img src="/UDC_Test/assets/img/Workflows.png" alt="Communication" className="monitor-screen" />
+            <img src="/UDC_Test-Main/assets/img/Workflows.png" alt="Communication" className="monitor-screen" />
           </div>
 
           <h4 className="feature-small-title"></h4>oddo Erp
@@ -122,7 +122,7 @@ const FeaturesSection = () => {
 
         <div className="feature-box">
           <div className="monitor-frame">
-            <img src="/UDC_Test/assets/img/Planner.png" alt="Project" className="monitor-screen" />
+            <img src="/UDC_Test-Main/assets/img/Planner.png" alt="Project" className="monitor-screen" />
           </div>
 
           <h4 className="feature-small-title">ZWCD</h4>

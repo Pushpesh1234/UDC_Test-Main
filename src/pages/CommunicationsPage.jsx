@@ -40,7 +40,7 @@ const CommunicationsPage = () => {
             {/* 1. Hero Section (Image and Title) */}
             <header className="hero-section">
               <div className="hero-banner">
-  <img src="/UDC_Test/assets/img/communications_main.png
+  <img src="/UDC_Test-Main/assets/img/communications_main.png
 " alt="Communications"/>
 </div>
 
