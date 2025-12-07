@@ -77,7 +77,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                     className="dropdown-item"
                     onClick={handleNavClick}
                   >
-                    Bitrix24 Industry Solutions
+                    Bitrix
                   </Link>
                 </li>
                 <li>
@@ -86,7 +86,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                     className="dropdown-item"
                     onClick={handleNavClick}
                   >
-                    Bitrix24 Applications
+                    Zoho
                   </Link>
                 </li>
                 <li>
@@ -95,7 +95,16 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                     className="dropdown-item"
                     onClick={handleNavClick}
                   >
-                    Bitrix24 CRM & Project
+                    Odoo
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/Bitrix24CRM"
+                    className="dropdown-item"
+                    onClick={handleNavClick}
+                  >
+                    ZWC
                   </Link>
                 </li>
               </ul>

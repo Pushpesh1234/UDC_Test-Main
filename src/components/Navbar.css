@@ -85,6 +85,8 @@
 .navbar .dropdown-item {
   padding: 10px 20px;
   font-size: 14px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .navbar .dropdown-item:hover {
