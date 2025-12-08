@@ -26,7 +26,7 @@ import ScrollToTop from "./ScrollToTop";
 import FeaturesSection from "./components/FeaturesSection";
 import Bitrix24IndustrySolutions from "./pages/Bitrix24IndustrySolutions";
 import Bitrix24Applications from "./pages/Bitrix24Applications";
-
+import CRM from "./pages/CRM";
 import { Button } from "react-bootstrap"; 
 
 // 1. 🚀 IMPORT YOUR NEW PAGE HERE
@@ -80,12 +80,12 @@ function App() {
             }
           />
 
-          <Route path="/Bitrix24CRM" element={<Bitrix24CRM />} />
+{/*           <Route path="/Bitrix24CRM" element={<Bitrix24CRM />} /> */}
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/services" element={<Services onPopupOpen={() => popupFormRef.current.open()} />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
-<Route path="/bitrix24-industry-solutions" element={<Bitrix24IndustrySolutions />} />
+<Route path="/bitrix24-crm" element={<CRM />} />
 <Route path="/bitrix24-applications" element={<Bitrix24Applications />} />
 
           

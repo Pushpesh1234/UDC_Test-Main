@@ -63,22 +63,81 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
 
             {/* -------- SOLUTIONS + DROPDOWN ---------- */}
             <li className="nav-item dropdown custom-dropdown">
-              <span
+              <a
                 className="nav-link px-3 dropdown-toggle"
+                href="#"
                 role="button"
+                onClick={(e) => e.preventDefault()}
               >
                 PRODUCTS
-              </span>
+              </a>
 
               <ul className="dropdown-menu custom-dropdown-menu">
-                <li>
-                  <Link
-                    to="/bitrix24-industry-solutions"
-                    className="dropdown-item"
-                    onClick={handleNavClick}
+                <li className="dropdown-submenu">
+                  <a
+                    className="dropdown-item dropdown-toggle"
+                    href="#"
+                    role="button"
+                    onClick={(e) => e.preventDefault()}
                   >
                     BITRIX 24
-                  </Link>
+                  </a>
+                  <ul className="dropdown-menu custom-dropdown-menu">
+                    <li>
+                      <Link
+                        to="/bitrix24-crm"
+                        className="dropdown-item"
+                        onClick={handleNavClick}
+                      >
+                        CRM
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/bitrix24-applications"
+                        className="dropdown-item"
+                        onClick={handleNavClick}
+                      >
+                        TASK & PROJECTS
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/Bitrix24CRM"
+                        className="dropdown-item"
+                        onClick={handleNavClick}
+                      >
+                        COLLABORATION
+                      </Link>
+                    </li>
+                     <li>
+                      <Link
+                        to="/Bitrix24CRM"
+                        className="dropdown-item"
+                        onClick={handleNavClick}
+                      >
+                        SITE & STORE
+                      </Link>
+                    </li>
+                       <li>
+                      <Link
+                        to="/Bitrix24CRM"
+                        className="dropdown-item"
+                        onClick={handleNavClick}
+                      >
+                        HR & AUTOMATION
+                      </Link>
+                    </li>
+                                        <li>
+                      <Link
+                        to="/Bitrix24CRM"
+                        className="dropdown-item"
+                        onClick={handleNavClick}
+                      >
+                        COPILOT
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <Link
