@@ -57,7 +57,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                 className={`nav-link px-3 ${currentPath === "/" ? "active" : ""}`}
                 onClick={handleNavClick}
               >
-                Home
+                HOME
               </Link>
             </li>
 
@@ -67,7 +67,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                 className="nav-link px-3 dropdown-toggle"
                 role="button"
               >
-                Products
+                PRODUCTS
               </span>
 
               <ul className="dropdown-menu custom-dropdown-menu">
@@ -77,7 +77,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                     className="dropdown-item"
                     onClick={handleNavClick}
                   >
-                    Bitrix
+                    BITRIX 24
                   </Link>
                 </li>
                 <li>
@@ -86,7 +86,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                     className="dropdown-item"
                     onClick={handleNavClick}
                   >
-                    Zoho
+                    ZOHO
                   </Link>
                 </li>
                 <li>
@@ -95,7 +95,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                     className="dropdown-item"
                     onClick={handleNavClick}
                   >
-                    Odoo
+                    ODOO
                   </Link>
                 </li>
                 <li>
@@ -104,7 +104,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                     className="dropdown-item"
                     onClick={handleNavClick}
                   >
-                    ZWC
+                    ZWCD
                   </Link>
                 </li>
               </ul>
@@ -117,7 +117,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                 className={`nav-link px-3 ${currentPath === "/pricing" ? "active" : ""}`}
                 onClick={handleNavClick}
               >
-                Pricing
+                PRICING
               </Link>
             </li>
 
@@ -127,7 +127,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                 className={`nav-link px-3 ${currentPath === "/services" ? "active" : ""}`}
                 onClick={handleNavClick}
               >
-                Services
+                SERVICES
               </Link>
             </li>
 
@@ -137,7 +137,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                 className={`nav-link px-3 ${currentPath === "/about" ? "active" : ""}`}
                 onClick={handleNavClick}
               >
-                About
+                ABOUT
               </Link>
             </li>
 
@@ -147,7 +147,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                 className={`nav-link px-3 ${currentPath === "/contact" ? "active" : ""}`}
                 onClick={handleNavClick}
               >
-                Contact
+                CONTACT
               </Link>
             </li>
 
