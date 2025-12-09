@@ -5,12 +5,14 @@ import themeBack4 from '../assets/theme/themeBack4.jpg'
 import themeBack5 from '../assets/theme/themeBack5.jpg'
 import themeBack6 from '../assets/theme/themeBack6.jpg'
 import themeBack7 from '../assets/theme/themeBack7.jpg'
+import zicon from '../assets/theme/zIcon.png'
+import b24icon from '../assets/theme/b24Icon.png'
 import css from "./Landing.module.css"
 import glass from '../assets/theme/glass.jpg'
 import FeatureSlider from '../components/FeatureSlider'
 import Testimonial from '../components/Testimonial'
-import Pricing from '../components/Pricing' 
-import Technology from '../components/Technology'    
+import Pricing from '../components/Pricing'
+import Technology from '../components/Technology'
 
 
 const Landing = () => {
@@ -32,7 +34,7 @@ const Landing = () => {
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Are You <b>Ready</b> to win in <b>Business</b>?</h5>
                             <p>In the competitve landscape of the business world,winning is not
-                            just about luck;its about prepration,strategy, and execution. </p>
+                                just about luck;its about prepration,strategy, and execution. </p>
                             <button className={css.learnmoreBtn}>LEARN MORE</button>
                         </div>
                     </div>
@@ -66,7 +68,7 @@ const Landing = () => {
             </div>
             <div>
                 <center>
-                    <h1><b>About </b> Company</h1>
+                    <h1 style={{marginTop:"20px"}}><b>About </b> Company</h1>
                     <p>
                         Unique Design Consultant (UDC) is an India-based<br /> Bitrix24 Gold Partner delivering CRM, ERP, and business <br />automation solutions globally.
                         We specialize in
@@ -95,27 +97,71 @@ const Landing = () => {
                 <div className={css.glassInner}>
                     <div className={css.sectionBoxLeft}>
                         <div className={css.rotatedNumber}>
-                            5 <span className={css.yearsLabel}>Years</span>
+                            <div style={{fontSize:"70px"}}>5</div>
+                             <div className={css.yearsLabel}>Years</div>
                         </div>
                         <button className={css.signupBtn}>SIGN UP</button>
                     </div>
 
-                    <div className={css.sectionBoxCenter} />
+                    {/* <div className={css.sectionBoxCenter} /> */}
 
                     <div className={css.sectionBoxRight}>
                         <h2>Ready to grow your business?</h2>
-                        <p>
+                        <p style={{marginBottom:"50px"}}>
                             As a trusted Bitrix24 Gold Partner, UDC delivers tailored CRM and automation
                             solutions that simplify processes, increase productivity, and accelerate growth.
                         </p>
+
+                        {/* products in UDC */}
+
+                      <div className={css.productUCD}>
+                       <div className={css.upperProduct}>
+                            <div>
+                             
+                                 BITRIX24 <img src={b24icon} width="100px"/>
+                                
+                                <p style={{marginTop:"20px"}}>
+                              Bitrix24 is an all-in-one online workspace that provides a comprehensive suite of tools for communication, collaboration, and business management, including CRM, task management, and HR automation      
+                                </p>
+                            </div>
+
+                            <div>
+                                ZOHO <img src={zicon} width="100px"/>
+                                <p style={{marginTop:"20px"}}>
+                              Zoho is a comprehensive suite of cloud-based business software offering over 55 applications for CRM, email, accounting, HR, project management, and more, known for its integrated platform      
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className={css.lowerProduct}>
+                            <div>ODOO
+                                <p style={{marginTop:"20px"}}>
+                            Odoo ERP system is enterprise resource planning software used company-wide for the management of business processes        
+                                </p>
+                            </div>
+
+                            <div>
+                                ZWCD
+                                <p style={{marginTop:"20px"}}>
+                             ZWCD (more commonly known as ZWCAD) is a CAD software application used for 2D drafting and basic 3D navigation       
+                                </p>
+                            </div>
+                        </div>
+                       
+
+                      </div>
+                        
+
+
                     </div>
+
 
                 </div>
             </div>
-          <FeatureSlider/>
-          <Testimonial/>
-          <Pricing/>
-          <Technology/>
+            <FeatureSlider />
+            <Testimonial />
+            <Pricing />
+            <Technology />
         </div>
     );
 }
