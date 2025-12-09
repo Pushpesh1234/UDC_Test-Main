@@ -91,15 +91,24 @@ const Landing = () => {
 
             {/* { 3 section of Landing} */}
 
-           <div className={css.threeSectionLanding}>
-             <div className={css.sectionBoxLeft}>
-                <h1>
-                    9   
-                    <span>Years</span>
-                </h1>
-                
-             <button>SIGN UP</button>
-             </div>
+            <div className={css.threeSectionLanding} style={{ backgroundImage: `url(${glass})` }}>
+                <div className={css.glassInner}>
+                    <div className={css.sectionBoxLeft}>
+                        <div className={css.rotatedNumber}>
+                            5 <span className={css.yearsLabel}>Years</span>
+                        </div>
+                        <button className={css.signupBtn}>SIGN UP</button>
+                    </div>
+
+                    <div className={css.sectionBoxCenter} />
+
+                    <div className={css.sectionBoxRight}>
+                        <h2>Ready to grow your business?</h2>
+                        <p>
+                            As a trusted Bitrix24 Gold Partner, UDC delivers tailored CRM and automation
+                            solutions that simplify processes, increase productivity, and accelerate growth.
+                        </p>
+                    </div>
 
                 </div>
             </div>
