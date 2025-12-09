@@ -84,7 +84,7 @@ const FeaturesSection = () => {
 
           <h4 className="feature-small-title">Zoho</h4>
           <h2 className="feature-title">
-            PROJECT & TASK <br /> MANAGEMENT
+            <br /> 
           </h2>
           <div className="feature-underline"></div>
 
