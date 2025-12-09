@@ -94,7 +94,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                     </li>
                     <li>
                       <Link
-                        to="/bitrix24-applications"
+                        to="/landing"
                         className="dropdown-item"
                         onClick={handleNavClick}
                       >

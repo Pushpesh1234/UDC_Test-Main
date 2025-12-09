@@ -27,6 +27,7 @@ import FeaturesSection from "./components/FeaturesSection";
 import Bitrix24IndustrySolutions from "./pages/Bitrix24IndustrySolutions";
 import Bitrix24Applications from "./pages/Bitrix24Applications";
 import CRM from "./pages/CRM";
+import Landing from "./pages/Landing";
 import { Button } from "react-bootstrap"; 
 
 // 1. 🚀 IMPORT YOUR NEW PAGE HERE
@@ -86,7 +87,7 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
 <Route path="/bitrix24-crm" element={<CRM />} />
-<Route path="/bitrix24-applications" element={<Bitrix24Applications />} />
+<Route path="/landing" element={<Landing />} />
 
           
           {/* 2. ✅ ADD THE NEW ROUTE HERE for your "CRM & Sales" page */}

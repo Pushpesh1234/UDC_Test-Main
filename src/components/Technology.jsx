@@ -3,7 +3,7 @@ import "./Technology.css";
 
 import wazzup from "../assets/partners/Wazzup24.jpg";
 import chatapp from "../assets/partners/chatapp.jpg";
-import zoho from "../assets/partners/zoho.jpg";
+import zoho from "../assets/img/zoho.jpg";
 import bitrix from "../assets/partners/bitrix.png";
 import edna from "../assets/partners/edna.webp";
 import propertyFinder from "../assets/partners/property-finder.jpg";
