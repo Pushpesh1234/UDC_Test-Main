@@ -72,12 +72,11 @@ const Landing = () => {
               {/* { 3 section of Landing} */}
 
            <div className={css.threeSectionLanding}>
-             <div className={css.sectionBoxLeft}>
+             <div>
                 <h1>
-                    9   
-                    <span>Years</span>
+                    9 
+                 <span>Years</span>
                 </h1>
-                
              <button>SIGN UP</button>
              </div>
 
