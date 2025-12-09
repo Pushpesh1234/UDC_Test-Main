@@ -63,23 +63,27 @@ function App() {
   onOpenForm={() => popupFormRef.current.open("Navbar")}
 />
  <ScrollToTop />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Hero onPopupOpen={() => popupFormRef.current.open()} />
-    <FeaturesSection /> 
-               <BitrixShowcase onOpenForm={(label) => popupFormRef.current.open(label)} />
-                <FeatureSlider />
-                <Technology />
-                <IndustryVertical onOpenForm={() => popupFormRef.current.open("Industry Vertical")} />
-                <DepartmentSection  onPopupOpen={() => popupFormRef.current.open()}/>
-                <Testimonial />
-                <WhyChooseUs onPopupOpen={() => popupFormRef.current.open()} />
-              </>
-            }
-          />
+                <Routes>
+                    {/* Landing is now the default page on site open */}
+                    <Route path="/" element={<Landing />} />
+
+                    {/* Preserve the previous homepage composition at /home */}
+                    <Route
+                        path="/home"
+                        element={
+                            <>
+                                <Hero onPopupOpen={() => popupFormRef.current.open()} />
+                                <FeaturesSection />
+                                <BitrixShowcase onOpenForm={(label) => popupFormRef.current.open(label)} />
+                                <FeatureSlider />
+                                <Technology />
+                                <IndustryVertical onOpenForm={() => popupFormRef.current.open("Industry Vertical")} />
+                                <DepartmentSection onPopupOpen={() => popupFormRef.current.open()} />
+                                <Testimonial />
+                                <WhyChooseUs onPopupOpen={() => popupFormRef.current.open()} />
+                            </>
+                        }
+                    />
 
 {/*           <Route path="/Bitrix24CRM" element={<Bitrix24CRM />} /> */}
           <Route path="/pricing" element={<Pricing />} />
