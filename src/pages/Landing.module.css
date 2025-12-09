@@ -1,14 +1,132 @@
-.custom-carousel{
-    height:100px;
-}
-.carousel-image{
-    height:10px;
-}
 
+
+.carousel-caption p{
+    font-size:10px;
+}
 .learnmoreBtn{
     background-color:#007bff;
     color:white;
-    padding:30px 20px;
+    padding:10px 20px;
     border:none;
-    border-radius:70px;
+    border-radius:10px;
+    margin-right:400px
+}
+
+.textSectionUDC{
+display:flex;
+justify-content: space-around;
+
+}
+
+.textSectionUDC p{
+    margin-right:200px;
+    margin-left:110px;
+    margin-top:50px
+}
+
+.textSectionUDC h1{
+ margin-top:50px;
+ margin-right:300px;
+ font-weight: bold;
+ font-size:50px;
+ 
+}
+.threeSectionLanding{
+    
+}
+
+.sectionBoxLeft{
+
+
+}
+
+.sectionBoxLeft h1 {
+transform: rotate(-90deg);
+transform-origin: top left
+
+}
+
+.sectionBoxLeft {
+    flex: 0 0 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rotatedNumber{
+    font-size: 48px;
+    font-weight: 700;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    margin-bottom: 16px;
+}
+
+.yearsLabel{
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+.signupBtn{
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.sectionBoxCenter{
+    flex: 1 1 40%;
+}
+
+.sectionBoxRight{
+    flex: 1 1 45%;
+    padding-left: 20px;
+}
+
+.sectionBoxRight h2{
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.sectionBoxRight p{
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* glass inner overlay to create frosted glass effect */
+.glassInner{
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+    background: rgba(255,255,255,0.12);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(15,23,42,0.12);
+}
+
+@media (max-width: 900px) {
+    .glassInner{
+        flex-direction: column;
+        padding: 20px;
+        gap: 18px;
+    }
+    .rotatedNumber{
+        transform: rotate(0deg);
+        font-size: 40px;
+    }
+    .sectionBoxRight{
+        padding-left: 0;
+    }
+    .sectionBoxCenter{
+        display: none;
+    }
 }
