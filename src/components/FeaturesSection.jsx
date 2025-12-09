@@ -65,7 +65,7 @@ const FeaturesSection = () => {
 
           <h4 className="feature-small-title">Bitrix24</h4>
           <h2 className="feature-title">
-            ALL IN ONE PLATFORM <br /> MANAGEMENT
+            ALL IN ONE PLATFORM <br />
           </h2>
           <div className="feature-underline"></div>
 
