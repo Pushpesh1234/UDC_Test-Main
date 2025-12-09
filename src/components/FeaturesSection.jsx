@@ -63,15 +63,14 @@ const FeaturesSection = () => {
             <img src="/UDC_Test-Main/assets/img/logo.png" alt="CRM" className="monitor-screen" />
           </div>
 
-          <h4 className="feature-small-title">Bitrix24</h4>
+          <h4 className="feature-small-title"></h4>
           <h2 className="feature-title">
             ALL IN ONE PLATFORM <br />
           </h2>
           <div className="feature-underline"></div>
 
           <p className="feature-text">
-            The CRM in Bitrix24 provides a platform to organize and track interaction with
-            potential or existing clients, partners, agents, vendors and other contacts.
+            Bitrix24 is an all-in-one business management platform that brings your CRM, Projects, Tasks, Collaboration, Communication, Contact Center, HR, and Marketing into one unified workspace. Trusted by over 12 million+ companies worldwide, Bitrix24 helps businesses streamline their operations, improve team productivity, and deliver exceptional customer experiences all from a single platform.
           </p>
 
           <a href="#" className="feature-link">Bitrix24 CRM &gt;&gt;&gt;</a>
