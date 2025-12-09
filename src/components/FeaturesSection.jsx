@@ -60,7 +60,7 @@ const FeaturesSection = () => {
         {/* BOX 1 */}
         <div className="feature-box">
           <div className="monitor-frame">
-            <img src="/UDC_Test-Main/assets/img/crm1.jpg" alt="CRM" className="monitor-screen" />
+            <img src="/UDC_Test-Main/assets/img/logo.png" alt="CRM" className="monitor-screen" />
           </div>
 
           <h4 className="feature-small-title">Bitrix24</h4>
