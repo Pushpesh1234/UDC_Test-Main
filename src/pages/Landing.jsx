@@ -33,28 +33,64 @@ const Landing = () => {
                         <img className="d-block w-100 carousel-image" src={themeBack} alt="First slide" />
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Are You <b>Ready</b> to win in <b>Business</b>?</h5>
-                            <p>In the competitve landscape of the business world,winning is not
-                                just about luck;its about prepration,strategy, and execution. </p>
+                            <p>Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀 All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place
+                                One of the leading consulting companies in India, renowned for its products, services, and after-sales support. </p>
                             <button className={css.learnmoreBtn}>LEARN MORE</button>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <img className="d-block w-100 carousel-image" src={themeBack2} alt="Second slide" />
+                        <div className="carousel-caption d-none d-md-block">
+                            <h5>Are You <b>Ready</b> to win in <b>Business</b>?</h5>
+                            <p>Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀 All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place
+                                One of the leading consulting companies in India, renowned for its products, services, and after-sales support. </p>
+                            <button className={css.learnmoreBtn}>LEARN MORE</button>
+                        </div>
                     </div>
                     <div className="carousel-item">
                         <img className="d-block w-100 carousel-image" src={themeBack3} alt="Third slide" />
+                        <div className="carousel-caption d-none d-md-block">
+                            <h5>Are You <b>Ready</b> to win in <b>Business</b>?</h5>
+                            <p>Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀 All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place
+                                One of the leading consulting companies in India, renowned for its products, services, and after-sales support. </p>
+                            <button className={css.learnmoreBtn}>LEARN MORE</button>
+                        </div>
                     </div>
                     <div className="carousel-item">
                         <img className="d-block w-100 carousel-image" src={themeBack4} alt="Slide 4" />
+                        <div className="carousel-caption d-none d-md-block">
+                            <h5>Are You <b>Ready</b> to win in <b>Business</b>?</h5>
+                            <p>Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀 All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place
+                                One of the leading consulting companies in India, renowned for its products, services, and after-sales support. </p>
+                            <button className={css.learnmoreBtn}>LEARN MORE</button>
+                        </div>
                     </div>
                     <div className="carousel-item">
                         <img className="d-block w-100 carousel-image" src={themeBack5} alt="Slide 5" />
+                        <div className="carousel-caption d-none d-md-block">
+                            <h5>Are You <b>Ready</b> to win in <b>Business</b>?</h5>
+                            <p>Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀 All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place
+                                One of the leading consulting companies in India, renowned for its products, services, and after-sales support. </p>
+                            <button className={css.learnmoreBtn}>LEARN MORE</button>
+                        </div>
                     </div>
                     <div className="carousel-item">
                         <img className="d-block w-100 carousel-image" src={themeBack6} alt="Slide 6" />
+                        <div className="carousel-caption d-none d-md-block">
+                            <h5>Are You <b>Ready</b> to win in <b>Business</b>?</h5>
+                            <p>Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀 All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place
+                                One of the leading consulting companies in India, renowned for its products, services, and after-sales support. </p>
+                            <button className={css.learnmoreBtn}>LEARN MORE</button>
+                        </div>
                     </div>
                     <div className="carousel-item">
                         <img className="d-block w-100 carousel-image" src={themeBack7} alt="Slide 7" />
+                        <div className="carousel-caption d-none d-md-block">
+                            <h5>Are You <b>Ready</b> to win in <b>Business</b>?</h5>
+                            <p>Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀 All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place
+                                One of the leading consulting companies in India, renowned for its products, services, and after-sales support. </p>
+                            <button className={css.learnmoreBtn}>LEARN MORE</button>
+                        </div>
                     </div>
                 </div>
                 <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -68,7 +104,7 @@ const Landing = () => {
             </div>
             <div>
                 <center>
-                    <h1 style={{marginTop:"20px"}}><b>About </b> Company</h1>
+                    <h1 style={{ marginTop: "20px" }}><b>About </b> Company</h1>
                     <p>
                         Unique Design Consultant (UDC) is an India-based<br /> Bitrix24 Gold Partner delivering CRM, ERP, and business <br />automation solutions globally.
                         We specialize in
@@ -97,8 +133,8 @@ const Landing = () => {
                 <div className={css.glassInner}>
                     <div className={css.sectionBoxLeft}>
                         <div className={css.rotatedNumber}>
-                            <div style={{fontSize:"70px"}}>5</div>
-                             <div className={css.yearsLabel}>Years</div>
+                            <div style={{ fontSize: "70px" }}>5</div>
+                            <div className={css.yearsLabel}>Years</div>
                         </div>
                         <button className={css.signupBtn}>SIGN UP</button>
                     </div>
@@ -107,55 +143,48 @@ const Landing = () => {
 
                     <div className={css.sectionBoxRight}>
                         <h2>Ready to grow your business?</h2>
-                        <p style={{marginBottom:"50px"}}>
+                        <p style={{ marginBottom: "50px" }}>
                             As a trusted Bitrix24 Gold Partner, UDC delivers tailored CRM and automation
                             solutions that simplify processes, increase productivity, and accelerate growth.
                         </p>
 
                         {/* products in UDC */}
 
-                      <div className={css.productUCD}>
-                       <div className={css.upperProduct}>
-                            <div>
-                             
-                                 BITRIX24 <img src={b24icon} width="100px"/>
-                                
-                                <p style={{marginTop:"20px"}}>
-                              Bitrix24 is an all-in-one online workspace that provides a comprehensive suite of tools for communication, collaboration, and business management, including CRM, task management, and HR automation      
-                                </p>
+                        <div className={css.productUCD}>
+                            <div className={css.upperProduct}>
+                                <div>
+
+                                    BITRIX24 <img src={b24icon} width="100px" />
+
+                                    <p style={{ marginTop: "20px" }}>
+                                        Bitrix24 is an all-in-one online workspace that provides a comprehensive suite of tools for communication, collaboration, and business management, including CRM, task management, and HR automation
+                                    </p>
+                                </div>
+
+                                <div>
+                                    ZOHO <img src={zicon} width="100px" />
+                                    <p style={{ marginTop: "20px" }}>
+                                        Zoho is a comprehensive suite of cloud-based business software offering over 55 applications for CRM, email, accounting, HR, project management, and more, known for its integrated platform
+                                    </p>
+                                </div>
                             </div>
 
-                            <div>
-                                ZOHO <img src={zicon} width="100px"/>
-                                <p style={{marginTop:"20px"}}>
-                              Zoho is a comprehensive suite of cloud-based business software offering over 55 applications for CRM, email, accounting, HR, project management, and more, known for its integrated platform      
-                                </p>
+                            <div className={css.lowerProduct}>
+                                <div>ODOO
+                                    <p style={{ marginTop: "20px" }}>
+                                        Odoo ERP system is enterprise resource planning software used company-wide for the management of business processes
+                                    </p>
+                                </div>
+
+                                <div>
+                                    ZWCD
+                                    <p style={{ marginTop: "20px" }}>
+                                        ZWCD (more commonly known as ZWCAD) is a CAD software application used for 2D drafting and basic 3D navigation
+                                    </p>
+                                </div>
                             </div>
                         </div>
-
-                        <div className={css.lowerProduct}>
-                            <div>ODOO
-                                <p style={{marginTop:"20px"}}>
-                            Odoo ERP system is enterprise resource planning software used company-wide for the management of business processes        
-                                </p>
-                            </div>
-
-                            <div>
-                                ZWCD
-                                <p style={{marginTop:"20px"}}>
-                             ZWCD (more commonly known as ZWCAD) is a CAD software application used for 2D drafting and basic 3D navigation       
-                                </p>
-                            </div>
-                        </div>
-                       
-
-                      </div>
-                        
-
-
                     </div>
-
-
                 </div>
             </div>
             <FeatureSlider />

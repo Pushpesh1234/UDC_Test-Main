@@ -22,9 +22,11 @@
 
 :global(.carousel-image) {
     width: 100%;
-    height: 89vh;
+    height:70vh;
     object-fit: cover;
 }
+
+
 
 :global(.carousel-caption) {
     position: absolute;
@@ -36,8 +38,8 @@
     background: rgba(0,0,0,0.45);
     color: #fff;
     border-radius: 10px;
-    max-width: 80%;
-   height:auto;
+    max-width: 100%;
+   height:70%;
 }
 
 :global(.carousel-indicators) {
