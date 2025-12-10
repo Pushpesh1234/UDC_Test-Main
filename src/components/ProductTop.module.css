@@ -1,0 +1,158 @@
+.productSection1{
+    display:flex;
+    background-color: #2fc7f7;
+    justify-content: space-around;
+    height:100vh;
+    margin-bottom: 120px;
+    
+
+}
+.leftSection1{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    color:white;
+    font-size:24px;
+    padding:90px;
+}
+
+.leftSection1 div:nth-child(1){
+    font-size:16px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    display:flex;
+    align-items: center;
+    border:1px solid white;
+    padding:10px 20px;
+    width:fit-content;
+    border-radius:15px;
+}
+.leftSection1 div:nth-child(1) span:nth-child(1){
+    margin-right:10px;
+}
+
+.leftSection1 h1{
+    margin-bottom:40px;
+    
+
+}
+.leftSection1 p{
+ font-size:20px;
+ margin-bottom:40px;
+}
+.rightSection1{
+    display:flex;
+    align-items:center;
+    padding:90px
+
+}
+.section1Button{
+    margin-top:20px;
+    padding:12px 24px;
+    font-size:16px;
+    font-weight:bold;
+    color:black;
+    background-color:#bdf300;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    max-width:170px;
+}
+
+/* Product Section-2  CSS */
+
+.productSection2{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.productSection2 h1{
+ font-family:"Montserrat Variable", "Helvetica Neue", Verdana, "Helvetica CY", "Nimbus Sans L", sans-serif;
+ padding-top:40px;
+ font-size:2.2rem;
+ color:#262626
+}
+
+.productSection2 p{
+    color:#262626;
+    text-align:justify;
+    margin-left:150px;
+    margin-right: 150px;
+    line-height:1.5rem;
+    font-size: 1.1rem;
+    font-family:"Montserrat Variable", "Helvetica Neue", Verdana, "Helvetica CY", "Nimbus Sans L", sans-serif;
+    margin-top:"20px"
+
+}
+.section2ImgContainer{
+ /* min-height: 40vh;  */
+ margin-top: 50px;
+ 
+}
+
+.section2ImgContainer img{
+ width: 100%;
+  height: auto;
+  max-width: 874px;
+    
+}
+
+.productSection2 button{
+    color: black;
+    border:none;
+    background-color:#bdf300;
+    padding:14px 28px;
+    border-radius: 12px;
+    font-weight:bold;
+    font-size: 14px;
+    margin-top:30px;
+}
+
+/* Product Section-3  CSS */
+
+.productSection3{
+    display:flex;
+    gap:100px;
+     max-width:1140px;
+    margin:auto;
+    margin-bottom:120px;
+}
+
+.section3Left{
+    display:flex;
+    flex-direction: column;
+     
+}
+
+.section3Left h1{
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 400;
+     font-family:"Montserrat Variable", "Helvetica Neue", Verdana, "Helvetica CY", "Nimbus Sans L",sans-serif;
+     text-align: justify; 
+}
+
+.section3Left p{
+  font-family:"Montserrat Variable", "Helvetica Neue", Verdana, "Helvetica CY", "Nimbus Sans L",sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.section3ImgContainer img{
+    max-width: 700px;
+}
+
+.productSection3 Button{
+    color: black;
+    border:none;
+    background-color:#bdf300;
+    padding:14px 28px;
+    border-radius: 12px;
+    font-weight:600;
+    font-size: 17px;
+    margin-top:30px;
+}

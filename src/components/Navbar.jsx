@@ -94,7 +94,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                     </li>
                     <li>
                       <Link
-                        to="/landing"
+                        to="/task-projects"
                         className="dropdown-item"
                         onClick={handleNavClick}
                       >
@@ -103,38 +103,101 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                     </li>
                     <li>
                       <Link
-                        to="/Bitrix24CRM"
+                        to="/social-intranet"
                         className="dropdown-item"
                         onClick={handleNavClick}
                       >
-                        COLLABORATION
+                        SOCIAL INTRANET
                       </Link>
                     </li>
                      <li>
                       <Link
-                        to="/Bitrix24CRM"
+                        to="/chat-viedos"
                         className="dropdown-item"
                         onClick={handleNavClick}
                       >
-                        SITE & STORE
+                        Chat & Viedos
                       </Link>
                     </li>
                        <li>
                       <Link
-                        to="/Bitrix24CRM"
+                        to="/documents"
                         className="dropdown-item"
                         onClick={handleNavClick}
                       >
-                        HR & AUTOMATION
+                        Documents
                       </Link>
                     </li>
-                                        <li>
+                      <li>
                       <Link
-                        to="/Bitrix24CRM"
+                        to="/drive"
                         className="dropdown-item"
                         onClick={handleNavClick}
                       >
-                        COPILOT
+                        Drive
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/calenders"
+                        className="dropdown-item"
+                        onClick={handleNavClick}
+                      >
+                        Calenders
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/mail"
+                        className="dropdown-item"
+                        onClick={handleNavClick}
+                      >
+                        Mail
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/cleints"
+                        className="dropdown-item"
+                        onClick={handleNavClick}
+                      >
+                        Clients
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/telephony"
+                        className="dropdown-item"
+                        onClick={handleNavClick}
+                      >
+                        Telephony
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/hr"
+                        className="dropdown-item"
+                        onClick={handleNavClick}
+                      >
+                        HR
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/mobile"
+                        className="dropdown-item"
+                        onClick={handleNavClick}
+                      >
+                        Mobile
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/sites"
+                        className="dropdown-item"
+                        onClick={handleNavClick}
+                      >
+                        Sites
                       </Link>
                     </li>
                   </ul>

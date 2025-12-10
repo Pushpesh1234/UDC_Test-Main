@@ -25,7 +25,7 @@ import CoPilotAIPage from './pages/CoPilotAIPage';
 import ScrollToTop from "./ScrollToTop"; 
 import FeaturesSection from "./components/FeaturesSection";
 import Bitrix24IndustrySolutions from "./pages/Bitrix24IndustrySolutions";
-import Bitrix24Applications from "./pages/Bitrix24Applications";
+import TaskProjects from "./pages/TaskProJects";
 import CRM from "./pages/CRM";
 import Landing from "./pages/Landing";
 import { Button } from "react-bootstrap"; 
@@ -91,7 +91,18 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
 <Route path="/bitrix24-crm" element={<CRM />} />
-<Route path="/landing" element={<Landing />} />
+<Route path="/task-projects" element={<TaskProjects />} />
+{/* <Route path="/social-intranet" element={<Bitrix24Applications />}/>
+<Route path="/documents" element={<Bitrix24Applications />}/>
+<Route path="/chat-viedos" element={<Bitrix24Applications />}/>
+<Route path="/drive" element={<Bitrix24Applications />}/>
+<Route path="/calenders" element={<Bitrix24Applications />}/>
+<Route path="/mail" element={<Bitrix24Applications />}/>
+<Route path="/cleints" element={<Bitrix24Applications />}/>
+<Route path="/telephony" element={<Bitrix24Applications />}/>
+<Route path="/hr" element={<Bitrix24Applications />}/>
+<Route path="/mobile" element={<Bitrix24Applications />}/>
+<Route path="/sites" element={<Bitrix24Applications />}/> */}
 
           
           {/* 2. ✅ ADD THE NEW ROUTE HERE for your "CRM & Sales" page */}

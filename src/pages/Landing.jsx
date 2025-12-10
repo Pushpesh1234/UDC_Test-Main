@@ -7,6 +7,7 @@ import themeBack6 from '../assets/theme/themeBack6.jpg'
 import themeBack7 from '../assets/theme/themeBack7.jpg'
 import zicon from '../assets/theme/zIcon.png'
 import b24icon from '../assets/theme/b24Icon.png'
+import odooicon from '../assets/theme/odooIcon.png'
 import css from "./Landing.module.css"
 import glass from '../assets/theme/glass.jpg'
 import FeatureSlider from '../components/FeatureSlider'
@@ -178,7 +179,7 @@ Our solutions simplify workflow management, improve team collaboration, boost pr
 
                             <div className={css.lowerProduct}>
                                 <div>
-                                    <span style={{fontSize:"40px",textAlign:"center"}}>ODOO</span>
+                                    <span style={{fontSize:"40px",textAlign:"center"}}>ODOO</span><img src={odooicon} width="100px" />
                                     <p style={{ marginTop: "20px",color:"black",textAlign:"justify" }}>
                                         Odoo ERP system is enterprise resource planning software used company-wide for the management of business processes
                                     </p>
