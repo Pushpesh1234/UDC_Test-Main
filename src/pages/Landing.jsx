@@ -35,7 +35,7 @@ const Landing = () => {
 
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Are You <b>Ready</b> to win in <b>Business</b>?</h5>
-                            <p>Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀 All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place
+                            <p style={{textAlign:"justify"}}>Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀 All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place
                                 One of the leading consulting companies in India, renowned for its products, services, and after-sales support. </p>
                             <button className={css.learnmoreBtn}>LEARN MORE</button>
                         </div>
@@ -45,7 +45,7 @@ const Landing = () => {
                         <img className="d-block w-100 carousel-image" src={themeBack2} alt="Second slide" />
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Are You <b>Ready</b> to win in <b>Business</b>?</h5>
-                            <p>Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀 All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place
+                            <p style={{textAlign:"justify"}}>Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀 All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place
                                 One of the leading consulting companies in India, renowned for its products, services, and after-sales support. </p>
                             <button className={css.learnmoreBtn}>LEARN MORE</button>
                         </div>
@@ -54,7 +54,7 @@ const Landing = () => {
                         <img className="d-block w-100 carousel-image" src={themeBack3} alt="Third slide" />
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Are You <b>Ready</b> to win in <b>Business</b>?</h5>
-                            <p>Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀 All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place
+                            <p style={{textAlign:"justify"}}>Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀 All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place
                                 One of the leading consulting companies in India, renowned for its products, services, and after-sales support. </p>
                             <button className={css.learnmoreBtn}>LEARN MORE</button>
                         </div>
@@ -63,7 +63,7 @@ const Landing = () => {
                         <img className="d-block w-100 carousel-image" src={themeBack4} alt="Slide 4" />
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Are You <b>Ready</b> to win in <b>Business</b>?</h5>
-                            <p>Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀 All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place
+                            <p style={{textAlign:"justify"}}>Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀 All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place
                                 One of the leading consulting companies in India, renowned for its products, services, and after-sales support. </p>
                             <button className={css.learnmoreBtn}>LEARN MORE</button>
                         </div>
@@ -72,7 +72,7 @@ const Landing = () => {
                         <img className="d-block w-100 carousel-image" src={themeBack5} alt="Slide 5" />
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Are You <b>Ready</b> to win in <b>Business</b>?</h5>
-                            <p>Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀 All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place
+                            <p style={{textAlign:"justify"}}>Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀 All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place
                                 One of the leading consulting companies in India, renowned for its products, services, and after-sales support. </p>
                             <button className={css.learnmoreBtn}>LEARN MORE</button>
                         </div>
@@ -81,7 +81,7 @@ const Landing = () => {
                         <img className="d-block w-100 carousel-image" src={themeBack6} alt="Slide 6" />
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Are You <b>Ready</b> to win in <b>Business</b>?</h5>
-                            <p>Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀 All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place
+                            <p style={{textAlign:"justify"}}>Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀 All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place
                                 One of the leading consulting companies in India, renowned for its products, services, and after-sales support. </p>
                             <button className={css.learnmoreBtn}>LEARN MORE</button>
                         </div>
@@ -90,7 +90,7 @@ const Landing = () => {
                         <img className="d-block w-100 carousel-image" src={themeBack7} alt="Slide 7" />
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Are You <b>Ready</b> to win in <b>Business</b>?</h5>
-                            <p>Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀 All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place
+                            <p style={{textAlign:"justify"}}>Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀 All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place
                                 One of the leading consulting companies in India, renowned for its products, services, and after-sales support. </p>
                             <button className={css.learnmoreBtn}>LEARN MORE</button>
                         </div>
@@ -109,19 +109,20 @@ const Landing = () => {
 
               {/* Section-2 About Company */}
             <div>
-                <center>
+                <div style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
                     <h1 style={{ marginTop: "20px" }}><b>About </b> Company</h1>
-                    <p>
+                    
+                        <p style={{textAlign:"center"}}> 
                         Unique Design Consultant (UDC) is an India-based<br /> Bitrix24 Gold Partner delivering CRM, ERP, and business <br />automation solutions globally.
                         We specialize in
                         <br /> <b>Bitrix24, Zoho, Odoo, and ZWCAD</b>.
-                    </p>
-                </center>
+                        </p> 
+                </div>
 
                 <div className={css.textSectionUDC}>
                     <div>
                         <h3>DEEPAK KUMAR — CEO OF COMPANY</h3>
-                        <p>
+                        <p style={{textAlign:"justify"}}>
                             As a trusted India-based Bitrix24 Gold Partner, we specialize in delivering custom CRM setups, workflow automation, business process optimization, and system integrations tailored to every industry.<br /><br />With a strong focus on digital transformation, we help businesses automate daily operations, enhance team productivity, improve customer experience, and scale faster with smart, efficient, and fully connected systems. Our team provides custom development, cloud & on-premise deployment, API integrations, data migration, and 24×7 global support, ensuring a seamless technology experience from start to finish.<br /><br />Whether you are a startup, SME, or enterprise, UDC empowers your business with reliable CRM–ERP solutions, advanced automation, and long-term support to achieve measurable growth and operational excellence.
                         </p>
                     </div>
@@ -149,7 +150,7 @@ const Landing = () => {
 
                     <div className={css.sectionBoxRight}>
                         <h2 style={{ color:"#0b5ed7",fontWeight:"bold" }}>Ready to grow your business?</h2>
-                        <p style={{ marginBottom: "50px",color:"black" }}>
+                        <p style={{ marginBottom: "50px",color:"black",textAlign:"justify"}}>
                            UDC helps businesses scale smarter with powerful CRM, ERP, and automation solutions tailored to their unique processes. As a trusted Bitrix24 Gold Partner in India, we deliver end-to-end implementation, customization, and support for Bitrix24, Zoho, Odoo, and ZWCAD.
 Our solutions simplify workflow management, improve team collaboration, boost productivity, and enable businesses to achieve faster digital transformation. Whether you’re a startup or an enterprise, UDC provides the technology and expertise you need to automate operations and drive consistent business growth—locally and globally.
                         </p>
@@ -160,31 +161,32 @@ Our solutions simplify workflow management, improve team collaboration, boost pr
                             <div className={css.upperProduct}>
                                 <div>
 
-                                    BITRIX24 <img src={b24icon} width="100px" />
+                                   <span style={{fontSize:"40px",textAlign:"center"}}> BITRIX24</span> <img src={b24icon} width="100px" />
 
-                                    <p style={{ marginTop: "20px",color:"black" }}>
+                                    <p style={{ marginTop: "20px",color:"black",textAlign:"justify" }}>
                                         Bitrix24 is an all-in-one online workspace that provides a comprehensive suite of tools for communication, collaboration, and business management, including CRM, task management, and HR automation
                                     </p>
                                 </div>
 
                                 <div>
-                                    ZOHO <img src={zicon} width="100px" />
-                                    <p style={{ marginTop: "20px",color:"black" }}>
+                                    <span style={{fontSize:"40px",textAlign:"center"}}>ZOHO</span> <img src={zicon} width="100px" />
+                                    <p style={{ marginTop: "20px",color:"black" ,textAlign:"justify"}}>
                                         Zoho is a comprehensive suite of cloud-based business software offering over 55 applications for CRM, email, accounting, HR, project management, and more, known for its integrated platform
                                     </p>
                                 </div>
                             </div>
 
                             <div className={css.lowerProduct}>
-                                <div>ODOO
-                                    <p style={{ marginTop: "20px",color:"black" }}>
+                                <div>
+                                    <span style={{fontSize:"40px",textAlign:"center"}}>ODOO</span>
+                                    <p style={{ marginTop: "20px",color:"black",textAlign:"justify" }}>
                                         Odoo ERP system is enterprise resource planning software used company-wide for the management of business processes
                                     </p>
                                 </div>
 
                                 <div>
-                                    ZWCD
-                                    <p style={{ marginTop: "20px",color:"black" }}>
+                                    <span style={{fontSize:"40px",textAlign:"center"}}>ZWCD</span>
+                                    <p style={{ marginTop: "20px",color:"black",textAlign:"justify" }}>
                                         ZWCD (more commonly known as ZWCAD) is a CAD software application used for 2D drafting and basic 3D navigation
                                     </p>
                                 </div>

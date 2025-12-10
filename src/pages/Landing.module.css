@@ -3,9 +3,7 @@
     font-size:32px;
 }
 
-.carousel-caption p{
-    font-size:10px;
-}
+
 .learnmoreBtn{
     background-color:#007bff;
     color:white;
@@ -218,13 +216,13 @@
     display: flex;
     flex-direction: column;
     row-gap: 50px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 .lowerProduct{
     display:flex;
     justify-content: space-between;
     column-gap:150px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 @media (max-width: 900px) {
