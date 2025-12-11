@@ -1,8 +1,7 @@
 import css from './ProductTop.module.css'
 import "@fontsource-variable/montserrat";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
-const ProductTop = ({ data,faq}) => {
+
+const ProductTop = ({ data}) => {
     return (
         <>
             {/* Product=>Bitrix dropdown pages section 1 backgroun Image */}
@@ -58,44 +57,6 @@ const ProductTop = ({ data,faq}) => {
                     <img src={data.img_3}></img>
                 </div>
             </section>
-
-
-            {/* Section Last->FAQ Accordian */}
-            <section>
-                {
-               faq.map(faq=>(
-                <div className="accordion" id="accordionExample">
-                    {/* Item 1 */}
-                    <div className="accordion-item">
-                        <h2 className="accordion-header" id={faq.unique_1}>
-                            <button
-                                className="accordion-button"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target={`#${faq.unique_2}`}
-                                aria-expanded="true"
-                                aria-controls={faq.unique_2}
-                            >
-                                {faq.query}
-                            </button>
-                        </h2>
-
-                        <div
-                            id={faq.unique_2}
-                            className="accordion-collapse collapse show"
-                            aria-labelledby={faq.unique_1}
-                            data-bs-parent="#accordionExample"
-                        >
-                            <div className="accordion-body">
-                                {faq.answer}
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-               ))     
-                   }
-            </section>
-
         </>
 
     )

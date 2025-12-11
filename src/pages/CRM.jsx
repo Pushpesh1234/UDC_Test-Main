@@ -1,6 +1,7 @@
 // import css from './CRM.module.css'
 
 import ProductTop from '../components/ProductTop'
+import FAQ from '../components/FAQ'
 import crmImage from '../assets/product/crm.png'
 import crmImage2 from '../assets/product/crm2.jpg'
 import crmImage3 from '../assets/product/crm3.jpg'
@@ -40,7 +41,8 @@ const CRM = () => {
 
     return (
         <>
-            <ProductTop data={crmData} faq={crmFAQ} />
+            <ProductTop data={crmData}  />
+            <FAQ faq={crmFAQ}/>
         </>
 
     )
