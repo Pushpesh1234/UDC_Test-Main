@@ -34,12 +34,12 @@ const FeatureSlider = () => {
   }, []);
 
   const features = [
-    { title: "CRM & Sales", description: "Boost Sales with Bitrix24 CRM ✨", color: "#4e54c8", logo: "Bitrix24 CRM", path: "/crm-sales" },
-    { title: "Pipeline Management", description: "Full Visibility ✨", color: "#0077b6", logo: "Bitrix24 Pipeline", path: "/pipeline-management" },
-    { title: "Projects", description: "Organize & Track Work ✨", color: "#00b894", logo: "Bitrix24 Projects", path: "/project-management" },
-    { title: "Communication", description: "Unify All Comms ✨", color: "#38b000", logo: "Bitrix24 Messenger", path: "/communications" },
-    { title: "Copilot AI", description: "Your Smart Assistant ✨", color: "#ff9f1c", logo: "Bitrix24 Copilot", path: "/copilot" },
-    { title: "Automation", description: "Streamline Workflows ✨", color: "#6c5ce7", logo: "Bitrix24 Automation", path: "/sales-automation" },
+    { title: "CRM & Sales", description: "Boost Sales & Customer Relationships with Bitrix24's All-in-One CRM Lead management helps capture, track & nurture potential clients✨", color: "#4e54c8", logo: "Bitrix24 CRM", path: "/crm-sales" },
+    { title: "Pipeline Management", description: "Bitrix24 Pipeline Management, we help you organize your sales efforts, gain crystal-clear visibility into deal flow, and drive growth with efficient automation. ✨", color: "#0077b6", logo: "Bitrix24 Pipeline", path: "/pipeline-management" },
+    { title: "Projects", description: "Organize & Track Work Project Management provides the tools you need to organize work, manage team capacity, track deadlines ✨", color: "#00b894", logo: "Bitrix24 Projects", path: "/project-management" },
+    { title: "Communication", description: "Unify All Comms Drive Engagement & Stronger Customer Connections A unified internal communication system is vital for modern teams.✨", color: "#38b000", logo: "Bitrix24 Messenger", path: "/communications" },
+    { title: "Copilot AI", description: "Your Smart Assistant Bitrix24 CoPilot AI is integrated across all your core modules from CRM and Tasks ✨", color: "#ff9f1c", logo: "Bitrix24 Copilot", path: "/copilot" },
+    { title: "Automation", description: "Streamline Workflows Bitrix24 Sales Automation** allows you to configure powerful workflows that handle routine administration, lead nurturing ✨", color: "#6c5ce7", logo: "Bitrix24 Automation", path: "/sales-automation" },
   ];
 
   return (
