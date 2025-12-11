@@ -28,6 +28,7 @@ import FeaturesSection from "./components/FeaturesSection";
 import Bitrix24IndustrySolutions from "./pages/Bitrix24IndustrySolutions";
 import TaskProjects from "./pages/TaskProJects";
 import CRM from "./pages/CRM";
+import HrAutomation from "./pages/HrAutomation";
 import SiteStore from "./pages/SiteStore";
 import Social from "./pages/Social";
 import Landing from "./pages/Landing";
@@ -97,6 +98,7 @@ function App() {
 <Route path="/task-projects" element={<TaskProjects />} />
 <Route path="/sites" element={<SiteStore />}/>
  <Route path="/social-intranet" element={<Social/>}/>
+ <Route path="/hr" element={<HrAutomation />}/>
 {/* <Route path="/documents" element={<Bitrix24Applications />}/>
 <Route path="/chat-viedos" element={<Bitrix24Applications />}/>
 <Route path="/drive" element={<Bitrix24Applications />}/>
@@ -104,7 +106,7 @@ function App() {
 <Route path="/mail" element={<Bitrix24Applications />}/>
 <Route path="/cleints" element={<Bitrix24Applications />}/>
 <Route path="/telephony" element={<Bitrix24Applications />}/>
-<Route path="/hr" element={<Bitrix24Applications />}/>
+
 <Route path="/mobile" element={<Bitrix24Applications />}/> */ }
 
 
