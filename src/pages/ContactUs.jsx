@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./contact.css";
+import FAQ from '../components/FAQ'
 
 const Contact = () => {
   useEffect(() => {
@@ -17,6 +18,27 @@ const Contact = () => {
       container.appendChild(script);
     }
   }, []);
+
+  const contactFAQ=  [
+        {
+            query: "What is CRM",
+            answer: "CRM is a Customer Relationship Management Software",
+            unique_1:"headingOne",
+            unique_2:"collapseOne"
+        },
+        {
+            query: "Who uses CRM software?",
+            answer: "CRM software is used by businesses of all sizes—from small startups to large enterprises—across industries like sales, marketing, real estate, finance, customer service, and more. Sales teams, marketers, support agents, and business owners rely on CRM systems to organize contacts, track interactions, automate workflows, and improve customer relationships.",
+            unique_1:"headingTwo",
+            unique_2:"collapseTwo"
+        },
+        {
+            query: "What integrations are available with Bitrix24 CRM?",
+            answer: "Bitrix24 integrates with popular email services (Gmail, Outlook), telephony providers, messengers (WhatsApp, Facebook Messenger), e-commerce platforms, and many third-party apps via REST API and Zapier. You can synchronize calendars, contacts, and automate data flows across tools.",
+            unique_1:"headingThree",
+            unique_2:"collapseThree"
+        }
+    ];
 
   return (
     <>
@@ -89,7 +111,7 @@ const Contact = () => {
     </div>
   </div>
 </section>
-
+<FAQ faq={contactFAQ}/>
     </>
   );
 };

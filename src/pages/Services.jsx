@@ -16,6 +16,7 @@ import {
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./services.css";
+import FAQ from "../components/FAQ"
 
 // ✅ Data array
 const serviceData = [
@@ -69,12 +70,35 @@ const serviceData = [
   },
 ];
 
+ const servicesFAQ = [
+        {
+            query: "What is CRM",
+            answer: "CRM is a Customer Relationship Management Software",
+            unique_1:"headingOne",
+            unique_2:"collapseOne"
+        },
+        {
+            query: "Who uses CRM software?",
+            answer: "CRM software is used by businesses of all sizes—from small startups to large enterprises—across industries like sales, marketing, real estate, finance, customer service, and more. Sales teams, marketers, support agents, and business owners rely on CRM systems to organize contacts, track interactions, automate workflows, and improve customer relationships.",
+            unique_1:"headingTwo",
+            unique_2:"collapseTwo"
+        },
+        {
+            query: "What integrations are available with Bitrix24 CRM?",
+            answer: "Bitrix24 integrates with popular email services (Gmail, Outlook), telephony providers, messengers (WhatsApp, Facebook Messenger), e-commerce platforms, and many third-party apps via REST API and Zapier. You can synchronize calendars, contacts, and automate data flows across tools.",
+            unique_1:"headingThree",
+            unique_2:"collapseThree"
+        }
+    ];
+
+
 const Services = ({ onPopupOpen }) => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
   return (
+    <>
     <Container fluid className="py-5 px-4 bg-dark text-light" id="services">
       <h2 className="text-center fw-bold mb-4 text-white">Our Services</h2>
       <p className="text-center text-light mb-5">
@@ -109,6 +133,9 @@ const Services = ({ onPopupOpen }) => {
         ))}
       </Row>
     </Container>
+    <FAQ faq={servicesFAQ}/>
+    </>
+    
   );
 };
 

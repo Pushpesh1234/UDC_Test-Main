@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import themeBack from '../assets/theme/themeBack.jpg'
 import themeBack2 from '../assets/theme/themeBack2.jpg'
 import themeBack3 from '../assets/theme/themeBack3.jpg'
@@ -19,16 +20,43 @@ import FeatureSlider from '../components/FeatureSlider'
 import Testimonial from '../components/Testimonial'
 import Pricing from '../components/Pricing'
 import Technology from '../components/Technology'
+import FAQ from '../components/FAQ'
 
 const slides = [
   themeBack, themeBack2, themeBack3, themeBack4,
   themeBack5, themeBack6, themeBack7, back1
 ];
 
+const homeFAQ = [
+  {
+    query: "What is CRM",
+    answer: "CRM is a Customer Relationship Management Software",
+    unique_1: "headingOne",
+    unique_2: "collapseOne"
+  },
+  {
+    query: "Who uses CRM software?",
+    answer: "CRM software is used by businesses of all sizes—from small startups to large enterprises—across industries like sales, marketing, real estate, finance, customer service, and more. Sales teams, marketers, support agents, and business owners rely on CRM systems to organize contacts, track interactions, automate workflows, and improve customer relationships.",
+    unique_1: "headingTwo",
+    unique_2: "collapseTwo"
+  },
+  {
+    query: "What integrations are available with Bitrix24 CRM?",
+    answer: "Bitrix24 integrates with popular email services (Gmail, Outlook), telephony providers, messengers (WhatsApp, Facebook Messenger), e-commerce platforms, and many third-party apps via REST API and Zapier. You can synchronize calendars, contacts, and automate data flows across tools.",
+    unique_1: "headingThree",
+    unique_2: "collapseThree"
+  }
+];
+
+
 const Landing = () => {
+  const [mountStatus, setMountStatus] = useState(false);
+
+  // useEffect(() => {
+  //   setMountStatus(false)
+  // }, [])
   return (
     <div className={css.mainLanding}>
-
 
       {/* ⭐ HERO CAROUSEL */}
       <div
@@ -52,9 +80,9 @@ const Landing = () => {
                     Are You Ready to grow your <span>Business?</span>
                   </h1>
                   <p>
-                     Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀 
-      All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place. One of the leading consulting 
-      companies in India, renowned for its products, services, and after-sales support.
+                    Boost Your Business with Unique Design Consultant Your Trusted CRM Gold Partner🚀
+                    All Tools (Bitrix24, Zoho, Odoo, ZWCad) in One Place. One of the leading consulting
+                    companies in India, renowned for its products, services, and after-sales support.
                   </p>
 
                   <div className={css.heroButtons}>
@@ -67,7 +95,7 @@ const Landing = () => {
         </div>
 
         {/* Controls */}
-        
+
       </div>
 
 
@@ -86,7 +114,7 @@ const Landing = () => {
           <div>
             <h3>DEEPAK KUMAR — CEO OF COMPANY</h3>
             <p>
-               As a trusted India-based Bitrix24 Gold Partner, we specialize in delivering custom CRM setups, workflow automation, business process optimization, and system integrations tailored to every industry.With a strong focus on digital transformation, we help businesses automate daily operations, enhance team productivity, improve customer experience, and scale faster with smart, efficient, and fully connected systems. Our team provides custom development, cloud & on-premise deployment, API integrations, data migration, and 24×7 global support, ensuring a seamless technology experience from start to finish.Whether you are a startup, SME, or enterprise, UDC empowers your business with reliable CRM–ERP solutions, advanced automation, and long-term support to achieve measurable growth and operational excellence.
+              As a trusted India-based Bitrix24 Gold Partner, we specialize in delivering custom CRM setups, workflow automation, business process optimization, and system integrations tailored to every industry.With a strong focus on digital transformation, we help businesses automate daily operations, enhance team productivity, improve customer experience, and scale faster with smart, efficient, and fully connected systems. Our team provides custom development, cloud & on-premise deployment, API integrations, data migration, and 24×7 global support, ensuring a seamless technology experience from start to finish.Whether you are a startup, SME, or enterprise, UDC empowers your business with reliable CRM–ERP solutions, advanced automation, and long-term support to achieve measurable growth and operational excellence.
             </p>
           </div>
 
@@ -116,7 +144,7 @@ const Landing = () => {
             <h2>Ready To Grow Your Business?</h2>
             <p>
               UDC helps businesses scale smarter with powerful CRM, ERP, and automation solutions tailored to their unique processes. As a trusted Bitrix24 Gold Partner in India, we deliver end-to-end implementation, customization, and support for Bitrix24, Zoho, Odoo, and ZWCAD.
-Our solutions simplify workflow management, improve team collaboration, boost productivity, and enable businesses to achieve faster digital transformation. Whether you’re a startup or an enterprise, UDC provides the technology and expertise you need to automate operations and drive consistent business growth—locally and globally.
+              Our solutions simplify workflow management, improve team collaboration, boost productivity, and enable businesses to achieve faster digital transformation. Whether you’re a startup or an enterprise, UDC provides the technology and expertise you need to automate operations and drive consistent business growth—locally and globally.
             </p>
 
             <div className={css.productGrid}>
@@ -151,8 +179,9 @@ Our solutions simplify workflow management, improve team collaboration, boost pr
       {/* ⭐ OTHER SECTIONS */}
       <FeatureSlider />
       <Testimonial />
-      <Pricing />
+      <Pricing status={mountStatus} />
       <Technology />
+      <FAQ faq={homeFAQ} />
 
     </div>
   );

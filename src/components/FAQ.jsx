@@ -19,20 +19,23 @@ const Faq = ({ faq }) => {
 
     const toggle = (index) => setOpenIndex(prev => prev === index ? -1 : index);
     return (
-        <>
-            <div className="accordion" id="accordionExample">
+        <>                    
+                                  <center style={{fontSize:"40px",marginBottom:"5px",marginTop:"40px",fontWeight:"bold"}}>
+                                FAQ
+                              </center>
+            <div className="accordion w-75 mx-auto " id="accordionExample ">
                 {
                     faq.map((Itemfaq,index) => (                  
-                        <div className="accordion-item">
+                        <div className="accordion-item mb-5 rounded-5">
                             <h2 className="accordion-header" id={Itemfaq.unique_1}>
                                 <button
-                                className={`accordion-button ${openIndex === index ? '' : 'collapsed'}`}
+                                className={`accordion-button border rounded-5 ${openIndex === index ? '' : 'collapsed'}`}
                                 type="button"
                                 onClick={() => toggle(index)}
                                 aria-expanded={openIndex === index}
                                 aria-controls={Itemfaq.unique_2}
                             >
-                                {Itemfaq.query}
+                              <strong> {Itemfaq.query}</strong>
                             </button>
                             </h2>
 

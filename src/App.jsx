@@ -31,7 +31,15 @@ import CRM from "./pages/CRM";
 import HrAutomation from "./pages/HrAutomation";
 import SiteStore from "./pages/SiteStore";
 import Social from "./pages/Social";
+import Document from "./pages/Document";
+import Drive from "./pages/Drive";
+import Mail from "./pages/Mail";
+import Mobile from "./pages/Mobile";
+import Telephony from "./pages/Telephony";
+import Cleint from "./pages/Cleint";
+import Calender from "./pages/Calender";
 import Landing from "./pages/Landing";
+
 import { Button } from "react-bootstrap"; 
 
 // 1. 🚀 IMPORT YOUR NEW PAGE HERE
@@ -99,15 +107,15 @@ function App() {
 <Route path="/sites" element={<SiteStore />}/>
  <Route path="/social-intranet" element={<Social/>}/>
  <Route path="/hr" element={<HrAutomation />}/>
-{/* <Route path="/documents" element={<Bitrix24Applications />}/>
-<Route path="/chat-viedos" element={<Bitrix24Applications />}/>
-<Route path="/drive" element={<Bitrix24Applications />}/>
-<Route path="/calenders" element={<Bitrix24Applications />}/>
-<Route path="/mail" element={<Bitrix24Applications />}/>
-<Route path="/cleints" element={<Bitrix24Applications />}/>
-<Route path="/telephony" element={<Bitrix24Applications />}/>
+ <Route path="/documents" element={<Document />}/>
 
-<Route path="/mobile" element={<Bitrix24Applications />}/> */ }
+<Route path="/drive" element={<Drive/>}/>
+<Route path="/calenders" element={<Calender/>}/>
+<Route path="/mail" element={<Mail />}/>
+<Route path="/clients" element={<Cleint />}/>
+<Route path="/telephony" element={<Telephony />}/>
+<Route path="/mobile" element={<Mobile />}/>  
+{/* <Route path="/chat-viedos" element={<Bitrix24Applications />}/> */}
 
 
           
