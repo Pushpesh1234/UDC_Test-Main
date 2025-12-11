@@ -81,8 +81,8 @@
   border-radius: 0;
   padding: 10px 0;
   position: absolute;
-  min-width: 200px;
-  /* display: none; */
+  min-width: 50px;
+  display: none;
   z-index: 999;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -145,6 +145,27 @@
   background-color: #f5f5f5;
 }
 
-.custom-submenu{
-  display:flex;
+.Bitrix24Submenu{
+  display:grid;
+  grid-template-columns: repeat(4,2fr);
+  align-items: center;
+}
+
+.Bitrix24Submenu li{
+  
+ 
+}
+
+.bitrixDropdown{
+padding: 5px 15px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  
+}
+.bitrixDropdown:hover{
+background: #f5f5f5;
 }

@@ -7,6 +7,22 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
   const location = useLocation();
   const currentPath = location.pathname;
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+  const bitrixSubmenu=[
+    {path:"/bitrix24-crm",content:"CRM"},
+    {path:"/task-projects",content:"Task & Projects"},
+    {path:"/social-intranet",content:"Social Intranet"},
+    {path:"/chat-viedos",content:"Chat & Viedos"},
+    {path:"/documents",content:"Documents"},
+    {path:"/drive",content:"Drive"},
+    {path:"/calenders",content:"Calenders"},
+    {path:"/mail",content:"Mail"},
+    {path:"/clients",content:"Clients"},
+    {path:"/telephony",content:"Telephony"},
+    {path:"hr",content:"HR"},
+    {path:"mobile",content:"Mobile"},
+    {path:"sites",content:"Sites"}
+
+  ]
 
   const handleNavClick = () => {
     setIsNavCollapsed(true);
@@ -72,7 +88,10 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                 PRODUCTS
               </a>
 
+                {/* unorder list for product submenu list */}
               <ul className="dropdown-menu custom-dropdown-menu">
+
+                {/* product  submenu li -> Bitrix24 */}
                 <li className="dropdown-submenu">
                   <a
                     className="dropdown-item dropdown-toggle"
@@ -82,126 +101,27 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                   >
                     BITRIX 24
                   </a>
-                  <ul className="dropdown-menu custom-submenu">
-                    <li>
+
+                  {/*product=>bitrix24 submenu items loop */}
+                  <ul className="dropdown-menu">
+                    <div className="Bitrix24Submenu">
+                    {bitrixSubmenu.map(item=>(
+                         <li>
                       <Link
-                        to="/bitrix24-crm"
-                        className="dropdown-item"
+                        to={item.path}
+                        className="bitrixDropdown"
                         onClick={handleNavClick}
                       >
-                        CRM
+                        {item.content}
                       </Link>
                     </li>
-                    <li>
-                      <Link
-                        to="/task-projects"
-                        className="dropdown-item"
-                        onClick={handleNavClick}
-                      >
-                        TASK & PROJECTS
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/social-intranet"
-                        className="dropdown-item"
-                        onClick={handleNavClick}
-                      >
-                        SOCIAL INTRANET
-                      </Link>
-                    </li>
-                     <li>
-                      <Link
-                        to="/chat-viedos"
-                        className="dropdown-item"
-                        onClick={handleNavClick}
-                      >
-                        Chat & Viedos
-                      </Link>
-                    </li>
-                       <li>
-                      <Link
-                        to="/documents"
-                        className="dropdown-item"
-                        onClick={handleNavClick}
-                      >
-                        Documents
-                      </Link>
-                    </li>
-                      <li>
-                      <Link
-                        to="/drive"
-                        className="dropdown-item"
-                        onClick={handleNavClick}
-                      >
-                        Drive
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/calenders"
-                        className="dropdown-item"
-                        onClick={handleNavClick}
-                      >
-                        Calenders
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/mail"
-                        className="dropdown-item"
-                        onClick={handleNavClick}
-                      >
-                        Mail
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/cleints"
-                        className="dropdown-item"
-                        onClick={handleNavClick}
-                      >
-                        Clients
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/telephony"
-                        className="dropdown-item"
-                        onClick={handleNavClick}
-                      >
-                        Telephony
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/hr"
-                        className="dropdown-item"
-                        onClick={handleNavClick}
-                      >
-                        HR
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/mobile"
-                        className="dropdown-item"
-                        onClick={handleNavClick}
-                      >
-                        Mobile
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/sites"
-                        className="dropdown-item"
-                        onClick={handleNavClick}
-                      >
-                        Sites
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
+                    ))} 
+                    </div>
+                  </ul>           
+                </li>  
+                {/* li content of product->Bitrix24 end her */}
+
+                {/* product submenu-> zoho */}
                 <li>
                   <Link
                     to="/bitrix24-applications"
@@ -211,6 +131,8 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                     ZOHO
                   </Link>
                 </li>
+                
+                {/* product submenu -> odoo */}
                 <li>
                   <Link
                     to="/Bitrix24CRM"
@@ -220,6 +142,8 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                     ODOO
                   </Link>
                 </li>
+                
+                {/* product submenu -> zwcd */}
                 <li>
                   <Link
                     to="/Bitrix24CRM"
@@ -229,6 +153,8 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                     ZWCD
                   </Link>
                 </li>
+
+                {/* End Product Submenu */}
               </ul>
             </li>
 

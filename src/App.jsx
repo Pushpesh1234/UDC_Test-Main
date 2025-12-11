@@ -1,3 +1,4 @@
+import  "./App.css"
 import { useState, useRef,useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -27,6 +28,8 @@ import FeaturesSection from "./components/FeaturesSection";
 import Bitrix24IndustrySolutions from "./pages/Bitrix24IndustrySolutions";
 import TaskProjects from "./pages/TaskProJects";
 import CRM from "./pages/CRM";
+import SiteStore from "./pages/SiteStore";
+import Social from "./pages/Social";
 import Landing from "./pages/Landing";
 import { Button } from "react-bootstrap"; 
 
@@ -92,8 +95,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
 <Route path="/bitrix24-crm" element={<CRM />} />
 <Route path="/task-projects" element={<TaskProjects />} />
-{/* <Route path="/social-intranet" element={<Bitrix24Applications />}/>
-<Route path="/documents" element={<Bitrix24Applications />}/>
+<Route path="/sites" element={<SiteStore />}/>
+ <Route path="/social-intranet" element={<Social/>}/>
+{/* <Route path="/documents" element={<Bitrix24Applications />}/>
 <Route path="/chat-viedos" element={<Bitrix24Applications />}/>
 <Route path="/drive" element={<Bitrix24Applications />}/>
 <Route path="/calenders" element={<Bitrix24Applications />}/>
@@ -101,8 +105,8 @@ function App() {
 <Route path="/cleints" element={<Bitrix24Applications />}/>
 <Route path="/telephony" element={<Bitrix24Applications />}/>
 <Route path="/hr" element={<Bitrix24Applications />}/>
-<Route path="/mobile" element={<Bitrix24Applications />}/>
-<Route path="/sites" element={<Bitrix24Applications />}/> */}
+<Route path="/mobile" element={<Bitrix24Applications />}/> */ }
+
 
           
           {/* 2. ✅ ADD THE NEW ROUTE HERE for your "CRM & Sales" page */}
