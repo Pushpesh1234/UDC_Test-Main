@@ -3,120 +3,65 @@
   font-family: "Segoe UI", sans-serif;
 }
 
-/* 🔥 HERO */
-.carousel-image {
-  height: 90vh;
-  width: 100%;              /* ✅ Image only 75% width */
-  margin-left: auto; 
+/* HERO */
+.carouselImage {
+  height: 92vh;
   object-fit: cover;
-  clip-path: inset(0 0 0 30%);
 }
 
 .heroOverlay {
   position: absolute;
-  inset: 0;                              /* ✅ covers FULL image */
-  background: rgba(0, 0, 0, 0.35);       /* ✅ glass tint */
-  backdrop-filter: blur(3px);           /* ✅ glass blur */
+  inset: 0;
+  background: rgba(0,0,0,0.45);
   display: flex;
   align-items: center;
-  z-index: 2;
 }
 
 .heroContent {
-  width: 50%;                           /* ✅ text limited to LEFT */
-  padding-left: 8%;
-  padding-right: 5%;
-  color: white;
-  text-align: left;
+  max-width: 45%;
+  margin-left: 6%;
+  color: #fff;
 }
 
 .heroContent h1 {
   font-size: 56px;
-  line-height: 1.2;
   font-weight: 700;
+  
 }
 
+.heroContent p{
+text-align: justify;
+}
 .heroContent span {
   color: #0d6efd;
 }
 
-.heroContent p {
-  margin-top: 20px;
-  font-size: 18px;
-  opacity: 0.9;
-}
-
 .heroButtons {
-  margin-top: 30px;
-  display: flex;
-  gap: 20px;
-}
-
-
-.heroOverlay {
-  animation: glassFade 1.2s ease-in-out;
-}
-
-@keyframes glassFade {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-
-
-.heroOverlay h1 {
-  font-size: 56px;
-  line-height: 1.2;
-  font-weight: 700;
-}
-
-.heroOverlay span {
-  color: #0d6efd;
-}
-
-.heroOverlay p {
   margin-top: 20px;
-  font-size: 18px;
-  opacity: 0.9;
 }
 
-.heroButtons {
-  margin-top: 30px;
-  display: flex;
-  gap: 20px;
-}
-
-/* ✅ BUTTONS */
 .primaryBtn {
-  background: linear-gradient(135deg, #0d6efd, #003cff);
-  color: white;
+  background: #0d6efd;
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 30px;
   border: none;
-  padding: 14px 32px;
-  border-radius: 30px;
-  font-weight: 600;
   cursor: pointer;
+  
 }
 
-.secondaryBtn {
-  background: transparent;
-  border: 2px solid white;
-  color: white;
-  padding: 14px 32px;
-  border-radius: 30px;
-  font-weight: 600;
-  cursor: pointer;
-}
 
-/* ✅ ABOUT */
+
+/* ABOUT SECTION */
 .aboutSection {
-  padding: 90px 20px;
-  text-align: center;
+  padding: 80px 20px;
   background: #f8fbff;
+  text-align: center;
 }
 
 .aboutSection h2 {
   font-size: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .aboutSection span {
@@ -124,25 +69,32 @@
 }
 
 .aboutSection p {
-  max-width: 750px;
-  margin: 0 auto 40px;
-  color: #000;
+  max-width: 700px;
+  margin: 0 auto 35px;
+  color: #333;
+  text-align: justify;
 }
 
+
+/* ABOUT CARD */
 .aboutCard {
-  max-width: 1000px;
-  margin: auto;
-  background: white;
-  padding: 40px;
-  border-radius: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+  max-width: 1100px;
+  margin: auto;
+}
+
+
+.aboutCard p{
+  text-align: justify;
 }
 
 .clientBox h1 {
-  font-size: 64px;
+  font-size: 60px;
   color: #0d6efd;
 }
 
@@ -150,82 +102,71 @@
   font-weight: 600;
 }
 
-/* ✅ GROWTH SECTION */
+
+/* GROWTH SECTION */
 .growthSection {
-  padding: 100px 20px;
-  background-attachment: fixed;
+  padding: 90px 20px;
   background-size: cover;
 }
+
+
 
 .growthGlass {
   background: rgba(255,255,255,0.12);
   backdrop-filter: blur(10px);
   border-radius: 24px;
-  padding: 60px;
+  padding: 50px;
   display: flex;
-  gap: 50px;
-  max-width: 1200px;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1150px;
   margin: auto;
 }
 
-.growthLeft {
-  text-align: center;
-}
-
 .experienceCircle {
-  width: 170px;
-  height: 170px;
+  width: 160px;
+  height: 160px;
+  background: #0d6efd;
   border-radius: 50%;
-  background: linear-gradient(135deg, #0d6efd, #003cff);
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .experienceCircle h1 {
-  font-size: 48px;
-}
-
-.growthRight h2 {
-  font-size: 32px;
-  margin-bottom: 15px;
+  font-size: 45px;
 }
 
 .productGrid {
-  margin-top: 40px;
+  margin-top: 30px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2,1fr);
   gap: 20px;
 }
 
 .productCard {
-  background: white;
-  border-radius: 16px;
+  background: #fff;
   padding: 25px;
+  border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
   text-align: center;
 }
 
-/* ✅ RESPONSIVE */
+
+/* RESPONSIVE */
 @media (max-width: 900px) {
-  .heroOverlay {
-    padding: 30px;
+
+  .heroContent {
+    max-width: 90%;
   }
 
-  .heroOverlay h1 {
-    font-size: 36px;
-  }
-
-  .aboutCard {
-    flex-direction: column;
-    gap: 30px;
-  }
-
+  .aboutCard,
   .growthGlass {
     flex-direction: column;
+    text-align: center;
   }
 
   .productGrid {

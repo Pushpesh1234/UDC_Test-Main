@@ -82,7 +82,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                   >
                     BITRIX 24
                   </a>
-                  <ul className="dropdown-menu custom-dropdown-menu">
+                  <ul className="dropdown-menu custom-submenu">
                     <li>
                       <Link
                         to="/bitrix24-crm"
