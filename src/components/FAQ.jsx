@@ -20,10 +20,11 @@ const Faq = ({ faq }) => {
     const toggle = (index) => setOpenIndex(prev => prev === index ? -1 : index);
     return (
         <>                    
-                                  <center style={{fontSize:"40px",marginBottom:"5px",marginTop:"40px",fontWeight:"bold"}}>
+        <div className='w-75 mx-auto rounded-5 bg-white mb-5'>
+           <center style={{fontSize:"40px",marginBottom:"5px",marginTop:"40px",fontWeight:"bold"}}>
                                 FAQ
                               </center>
-            <div className="accordion w-75 mx-auto " id="accordionExample ">
+            <div className="accordion w-75 mx-auto py-5 " id="accordionExample ">
                 {
                     faq.map((Itemfaq,index) => (                  
                         <div className="accordion-item mb-5 rounded-5">
@@ -44,13 +45,14 @@ const Faq = ({ faq }) => {
                                  className={`accordion-collapse collapse ${openIndex === index ? 'show' : ''}`}
                                 
                             >
-                                <div className="accordion-body">
+                                <div className="accordion-body rounded-1">
                                     {Itemfaq.answer}
                                 </div>
                             </div>
                         </div>
                     ))
                 }
+            </div>
             </div>
         </>
     )

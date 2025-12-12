@@ -39,8 +39,10 @@ import Telephony from "./pages/Telephony";
 import Cleint from "./pages/Cleint";
 import Calender from "./pages/Calender";
 import Landing from "./pages/Landing";
+import ProuctPage from './components/ProductPage';
 
 import { Button } from "react-bootstrap"; 
+import ProductPage from "./components/ProductPage";
 
 // 1. 🚀 IMPORT YOUR NEW PAGE HERE
 // Make sure this path is correct!
@@ -102,6 +104,7 @@ function App() {
           <Route path="/services" element={<Services onPopupOpen={() => popupFormRef.current.open()} />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/product-page" element={<ProductPage/>}/>
 <Route path="/bitrix24-crm" element={<CRM />} />
 <Route path="/task-projects" element={<TaskProjects />} />
 <Route path="/sites" element={<SiteStore />}/>

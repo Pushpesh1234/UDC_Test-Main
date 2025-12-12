@@ -57,7 +57,7 @@ const Footer = () => {
             <p><FaMapMarkerAlt /> 596/7, Chandreshwar Nagar, Rishikesh, Dehradun (Uttrakhand)</p>
             <p><FaPhoneAlt /> +91-8958847686</p>
             <p><strong>Office Time:</strong> Mon–Sat (9am–6pm)</p>
-            <p><FaEnvelope /> info@uniquedesignconsultnt.in</p>
+            <p><FaEnvelope /> Info@uniquedesignconsultant.in</p>
 
             <div className="newsletter-box mt-4">
               <h6>Subscribe to our newsletter</h6>

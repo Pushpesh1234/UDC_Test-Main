@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link, useLocation } from "react-router-dom";
 import themeBack from '../assets/theme/themeBack.jpg'
 import themeBack2 from '../assets/theme/themeBack2.jpg'
 import themeBack3 from '../assets/theme/themeBack3.jpg'
@@ -64,7 +65,7 @@ const Landing = () => {
         className="carousel slide"
         data-bs-ride="carousel"
         data-bs-interval="2500"
-      >
+       >
         <div className="carousel-inner">
           {slides.map((img, index) => (
             <div
@@ -86,7 +87,13 @@ const Landing = () => {
                   </p>
 
                   <div className={css.heroButtons}>
-                    <button className={css.primaryBtn}>Learn More</button>
+                     <Link
+                to="/product-page"
+                
+              >
+                <button className={css.primaryBtn}>Learn More</button>
+              </Link>
+                    
                   </div>
                 </div>
               </div>
