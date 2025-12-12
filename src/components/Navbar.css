@@ -1,171 +1,202 @@
-/* === Final Permanent Navbar Styles === */
+/* ----------------------------
+ BASIC NAVBAR COLORS
+-----------------------------*/
 .custom-navbar {
   background-color: #3c3c3c !important;
 }
 
-.custom-navbar .navbar-brand {
-  color: #ffffff!important;
-  font-weight:600;
-  text-align: center;
-}
-
 .custom-navbar .nav-link {
   color: #ffffff !important;
-  margin-left: 15px;
-  transition: color 0.3s ease;
-}
-
-.custom-navbar .nav-link.active {
-  color: linear-gradient(90deg, #0048ff, #00c6ff) !important;
-  border-bottom: 2px linear-gradient(90deg, #0048ff, #00c6ff)
+  font-weight: 500;
 }
 
 .custom-navbar .nav-link:hover {
-  color: linear-gradient(90deg, #0048ff, #00c6ff)!important;
+  color: #00c6ff !important;
 }
 
-/* Buttons */
-.btn-outline-primary {
-  color: linear-gradient(90deg, #0048ff, #00c6ff) !important;
-  border-color: linear-gradient(90deg, #0048ff, #00c6ff) !important;
-}
-
-.btn-outline-primary:hover {
-  background-color: linear-gradient(90deg, #0048ff, #00c6ff) !important;
-  color: #0d1b2a !important;
-}
-
-.btn-primary {
-  background-color: linear-gradient(90deg, #0048ff, #00c6ff)!important;
-  border-color: linear-gradient(90deg, #0048ff, #00c6ff)!important;
-}
-
-.btn-primary:hover {
-  background-color: linear-gradient(90deg, #0048ff, #00c6ff)!important;
-  border-color: linear-gradient(90deg, #0048ff, #00c6ff) !important;
-}
-
-
-
-/* Responsive CSS (Media Query) */
-
-@media(max-width:768px){
-  
-
-  .custom-size{
-   font-size:10px;
-  }
-
-.size{
-  width:100px;
-  
-}
-}
-
-
-@media(max-width:550px){
-
-.custom-size{
-  font-size: 100px;
-}
-  
-.size{
-  height:100px;
-  
-}
-}
-
-
-.navbar .dropdown-menu {
-  background: #ffffff;
-  border-radius: 0;
-  padding: 10px 0;
-  position: absolute;
-  min-width: 50px;
-  display: none;
-  z-index: 999;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.navbar .dropdown-item {
-  padding: 10px 20px;
-  font-size: 14px;
-  text-align: center;
-  font-weight: bold;
-  color: #333;
-  text-decoration: none;
-  display: block;
-}
-
-.navbar .dropdown-item:hover {
-  background: #f5f5f5;
-}
-
-.nav-item.dropdown:hover > .dropdown-menu {
-  display: block;
-  margin-top: 0;
-}
-
-.dropdown-menu {
-  background-color: #fff;
-  border-radius: 0;
-  padding: 0;
-}
-
-.dropdown-item {
-  padding: 10px 20px;
-  font-size: 14px;
-}
-
-/* Submenu Dropdown Styles */
-.dropdown-submenu {
+/* ----------------------------
+ MEGA MENU (PRODUCTS)
+-----------------------------*/
+.custom-dropdown {
   position: relative;
 }
 
-.dropdown-submenu > .dropdown-item {
-  padding-right: 30px;
-}
-
-
-
-.dropdown-submenu .dropdown-menu {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  min-width: 200px;
+.custom-dropdown-menu {
   display: none;
-  z-index: 1000;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  width: 100vw;
+  background: #ffffff;
+  border-top: 3px solid #00c6ff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  padding: 28px 40px;
+  z-index: 99999;
 }
 
-.dropdown-submenu:hover > .dropdown-menu {
+.custom-dropdown:hover > .custom-dropdown-menu {
   display: block;
 }
 
-.dropdown-submenu > .dropdown-item:hover {
-  background-color: #f5f5f5;
+/* PRODUCTS arrow */
+.custom-dropdown > a.dropdown-toggle::after {
+  content: "";
+  display: inline-block;
+  margin-left: 6px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #fff;
+  transition: transform .25s ease;
 }
 
-.Bitrix24Submenu{
-  display:grid;
-  grid-template-columns: repeat(4,2fr);
-  align-items: center;
+.custom-dropdown:hover > a.dropdown-toggle::after {
+  transform: rotate(180deg);
 }
 
-.Bitrix24Submenu li{
-  
+/* ----------------------------
+ FIRST LEVEL ITEMS (Product icons)
+-----------------------------*/
+.custom-dropdown-menu > li {
+  list-style: none;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+/* --------------------------------------------
+ BITRIX24 SUBMENU — OPTION 2 + OPTION 4 COMBINED
+---------------------------------------------*/
+
+/* clickable Bitrix24 icon */
+.bitrixToggle {
+  cursor: pointer;
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.bitrixToggle.active {
+  background: rgba(0, 198, 255, 0.15);
+}
+
+/* BITRIX arrow */
+.bitrixToggle::after {
+  content: "";
+  position: absolute;
+  right: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #333;
+  transition: transform .2s ease;
+}
+
+.bitrixToggle.active::after {
+  transform: translateY(-50%) rotate(180deg);
+  border-top-color: #0d6efd;
+}
+
+/* submenu container inside mega menu */
+.B24Panel {
+  width: 100%;
+  margin-top: 15px;
+  padding: 20px;
+  background: #f5f9ff;
+  border-radius: 10px;
+  display: none;
+}
+
+/* SHOW when bitrixOpen = true */
+.B24Panel.show {
+  display: block;
+}
  
+ .Bitrix24Submenu{
+  top:100px;
+  width:80%;
+  margin:auto;
+ }
+/* grid card layout */
+.Bitrix24SubmenuGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px 18px;
+  margin-top: 50px;
 }
 
-.bitrixDropdown{
-padding: 5px 15px;
-  font-size: 14px;
+/* individual card */
+.Bitrix24Submenu li {
+  list-style: none;
+}
+
+.bitrixDropdown {
+  display: block;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 14px 10px;
+  border: 1px solid rgba(0,0,0,0.07);
   text-align: center;
-  font-weight: bold;
+  font-weight: 600;
   color: #333;
   text-decoration: none;
-  display: block;
-  
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
 }
-.bitrixDropdown:hover{
-background: #f5f5f5;
+
+/* hover effect */
+.bitrixDropdown:hover {
+  background: #eaf4ff;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(13,110,253,0.15);
+  color: #0d6efd !important;
+}
+
+/* --------------------------------------------
+ RESPONSIVE
+---------------------------------------------*/
+
+/* Tablet: 2-column layout */
+@media (max-width: 992px) {
+  .Bitrix24Submenu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .custom-dropdown-menu {
+    width: 100%;
+    left: 0;
+    transform: none;
+    padding: 20px;
+  }
+}
+
+/* Mobile: 1 column layout */
+@media (max-width: 768px) {
+
+  .custom-dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    padding: 15px;
+  }
+
+  .B24Panel {
+    padding: 15px;
+  }
+
+  .Bitrix24Submenu {
+    grid-template-columns: 1fr;
+  }
+
+  .bitrixToggle::after {
+    right: 6px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .bitrixDropdown {
+    padding: 16px;
+    font-size: 15px;
+  }
 }

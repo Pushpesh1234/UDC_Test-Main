@@ -225,7 +225,7 @@
    .heroContent p{
     
     font-weight: 300;
-    text-align:justify
+    text-align:left
    }
   .carouselImage {
     height: 70vh !important ;
@@ -271,7 +271,7 @@
   .primaryBtn {
     padding: 6px 7px;
     font-size:15px;
-    align-content: justify;
+    
   }
 
   .clientBox h1 {
