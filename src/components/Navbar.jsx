@@ -99,13 +99,17 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
               <ul className="dropdown-menu custom-dropdown-menu">
                 {/* Bitrix24 icon + submenu */}
                 <li className={`dropdown-submenu  ${bitrixOpen ? "open" : ""}`}>
-                  <a
-                    className="dropdown-toggle bitrixToggle"
-                    href="#"
-                    onClick={toggleBitrix}
-                  >
-                    <img src={b24icon} style={{ width: "100px" }} />
-                  </a>
+                 <a
+  className="dropdown-toggle bitrixToggle bitrixArrowWrapper"
+  href="#"
+  onClick={toggleBitrix}
+>
+  <img src={b24icon} style={{ width: "100px" }} />
+
+  {/* ▼ Arrow */}
+  <span className={`bitrix-arrow ${bitrixOpen ? "rotate" : ""}`}>▼</span>
+</a>
+
 
                   {/* Bitrix submenu */}
                   <ul
@@ -118,7 +122,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                         <li key={item.path}>
                           <Link
                             to={item.path}
-                            className="bitrixDropdown bitrixToggle"
+                            className="bitrixDropdown"
                             onClick={toggleBitrix}
                           >
                             {item.content}
