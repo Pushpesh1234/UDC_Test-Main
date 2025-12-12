@@ -15,6 +15,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
 
   // Bitrix submenu click toggle
   const [bitrixOpen, setBitrixOpen] = useState(false);
+  const [panelStatus,setPanel]=useState(false)
 
   const toggleBitrix = (e) => {
     e.preventDefault();
@@ -90,13 +91,13 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
               <a
                 className="nav-link px-3 dropdown-toggle"
                 href="#"
-                onClick={(e) => e.preventDefault()}
+                onClick={(e)=>{panelStatus===false?setPanel(true):setPanel(false)}}
               >
                 PRODUCTS
               </a>
 
               {/* Mega Panel */}
-              <ul className="dropdown-menu custom-dropdown-menu">
+              <ul className={`dropdown-menu custom-dropdown-menu ${panelStatus&&close}`}>
                 {/* Bitrix24 icon + submenu */}
                 <li className={`dropdown-submenu  ${bitrixOpen ? "open" : ""}`}>
                  <a
@@ -104,7 +105,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
   href="#"
   onClick={toggleBitrix}
 >
-  <img src={b24icon} style={{ width: "100px" }} />
+  <img src={b24icon} style={{ width: "50px" }} />
 
   {/* ▼ Arrow */}
   <span className={`bitrix-arrow ${bitrixOpen ? "rotate" : ""}`}>▼</span>
@@ -140,7 +141,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                     className="dropdown-item"
                     onClick={handleNavClick}
                   >
-                    <img src={zicon} style={{ width: "100px" }} />
+                    <img src={zicon} style={{ width: "50px" }} />
                   </Link>
                 </li>
 
@@ -151,7 +152,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                     className="dropdown-item"
                     onClick={handleNavClick}
                   >
-                    <img src={Odoo} style={{ width: "100px" }} />
+                    <img src={Odoo} style={{ width: "50px" }} />
                   </Link>
                 </li>
 
@@ -162,7 +163,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                     className="dropdown-item"
                     onClick={handleNavClick}
                   >
-                    <img src={Zwcad} style={{ width: "100px" }} />
+                    <img src={Zwcad} style={{ width: "50px" }} />
                   </Link>
                 </li>
               </ul>
