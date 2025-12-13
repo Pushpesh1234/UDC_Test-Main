@@ -15,7 +15,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
 
   // Bitrix submenu click toggle
   const [bitrixOpen, setBitrixOpen] = useState(false);
-  const [panelStatus,setPanel]=useState(false)
+
 
   const toggleBitrix = (e) => {
     e.preventDefault();
@@ -43,6 +43,8 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
   return (
     <nav className="navbar custom-navbar navbar-expand-lg px-3 px-lg-4 shadow sticky-top">
       <div className="container-fluid">
+
+         {/* Logo and sologon click redirect home page */}
         <Link
           className="navbar-brand d-flex align-items-center"
           to="/"
@@ -58,28 +60,30 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
             Unique Design Consultant
           </span>
         </Link>
+            {/* END HERE REDIRECT LOGIC */}
 
-        <button
+        {/* <button
           className="navbar-toggler"
           type="button"
           onClick={() => setIsNavCollapsed(!isNavCollapsed)}
         >
           <span className="navbar-toggler-icon"></span>
-        </button>
+        </button> */}
+           
+           {/* MENU ITEM LOGIC START HERE */}
 
         <div
-          className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
+          // className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
           id="navbarNav"
-        >
+         >
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
 
             {/* HOME */}
             <li className="nav-item">
               <Link
                 to="/"
-                className={`nav-link px-3 ${
-                  currentPath === "/" ? "active" : ""
-                }`}
+                className={`nav-link px-3  ${currentPath === "/" ? "active" : ""
+                  }` }
                 onClick={handleNavClick}
               >
                 HOME
@@ -91,32 +95,31 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
               <a
                 className="nav-link px-3 dropdown-toggle"
                 href="#"
-                onClick={(e)=>{panelStatus===false?setPanel(true):setPanel(false)}}
+
               >
                 PRODUCTS
               </a>
 
               {/* Mega Panel */}
-              <ul className={`dropdown-menu custom-dropdown-menu ${panelStatus&&close}`}>
+              <ul className={`dropdown-menu custom-dropdown-menu `}>
                 {/* Bitrix24 icon + submenu */}
                 <li className={`dropdown-submenu  ${bitrixOpen ? "open" : ""}`}>
-                 <a
-  className="dropdown-toggle bitrixToggle bitrixArrowWrapper"
-  href="#"
-  onClick={toggleBitrix}
->
-  <img src={b24icon} style={{ width: "50px" }} />
+                  <a
+                    className="dropdown-toggle bitrixToggle bitrixArrowWrapper"
+                    href="#"
+                    onClick={toggleBitrix}
+                  >
+                    <img src={b24icon} style={{ width: "50px" }} />
 
-  {/* ▼ Arrow */}
-  <span className={`bitrix-arrow ${bitrixOpen ? "rotate" : ""}`}>▼</span>
-</a>
+                    {/* ▼ Arrow */}
+                    <span onClick={toggleBitrix} className={`bitrix-arrow ${bitrixOpen ? "rotate" : ""}`}>▼</span>
+                  </a>
 
 
                   {/* Bitrix submenu */}
                   <ul
-                    className={`dropdown-menu Bitrix24Submenu  ${
-                      bitrixOpen ? "show" : ""
-                    }`}
+                    className={`dropdown-menu Bitrix24Submenu  ${bitrixOpen ? "show" : ""
+                      }`}
                   >
                     <div className="Bitrix24SubmenuGrid">
                       {bitrixSubmenu.map((item) => (
@@ -124,7 +127,7 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
                           <Link
                             to={item.path}
                             className="bitrixDropdown"
-                            onClick={toggleBitrix}
+
                           >
                             {item.content}
                           </Link>
@@ -173,9 +176,8 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
             <li className="nav-item">
               <Link
                 to="/pricing"
-                className={`nav-link px-3 ${
-                  currentPath === "/pricing" ? "active" : ""
-                }`}
+                className={`nav-link px-3 ${currentPath === "/pricing" ? "active" : ""
+                  }`}
                 onClick={handleNavClick}
               >
                 PRICING
@@ -185,9 +187,8 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
             <li className="nav-item">
               <Link
                 to="/services"
-                className={`nav-link px-3 ${
-                  currentPath === "/services" ? "active" : ""
-                }`}
+                className={`nav-link px-3 ${currentPath === "/services" ? "active" : ""
+                  }`}
                 onClick={handleNavClick}
               >
                 SERVICES
@@ -197,9 +198,8 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
             <li className="nav-item">
               <Link
                 to="/about"
-                className={`nav-link px-3 ${
-                  currentPath === "/about" ? "active" : ""
-                }`}
+                className={`nav-link px-3 ${currentPath === "/about" ? "active" : ""
+                  }`}
                 onClick={handleNavClick}
               >
                 ABOUT
@@ -209,9 +209,8 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
             <li className="nav-item">
               <Link
                 to="/contact"
-                className={`nav-link px-3 ${
-                  currentPath === "/contact" ? "active" : ""
-                }`}
+                className={`nav-link px-3 ${currentPath === "/contact" ? "active" : ""
+                  }`}
                 onClick={handleNavClick}
               >
                 CONTACT
@@ -220,6 +219,8 @@ const Navbar = ({ onAuthOpen, onOpenForm }) => {
 
           </ul>
         </div>
+        {/* MAIN MENU BAR END HERE */}
+
       </div>
     </nav>
   );

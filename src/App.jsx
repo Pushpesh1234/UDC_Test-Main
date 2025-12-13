@@ -39,7 +39,7 @@ import Telephony from "./pages/Telephony";
 import Cleint from "./pages/Cleint";
 import Calender from "./pages/Calender";
 import Landing from "./pages/Landing";
-import ProuctPage from './components/ProductPage';
+import FAQ from './components/FAQ'
 
 import { Button } from "react-bootstrap"; 
 import ProductPage from "./components/ProductPage";
@@ -47,6 +47,26 @@ import ProductPage from "./components/ProductPage";
 // 1. 🚀 IMPORT YOUR NEW PAGE HERE
 // Make sure this path is correct!
 
+const homeFAQ = [
+  {
+    query: "What is CRM",
+    answer: "CRM is a Customer Relationship Management Software",
+    unique_1: "headingOne",
+    unique_2: "collapseOne"
+  },
+  {
+    query: "Who uses CRM software?",
+    answer: "CRM software is used by businesses of all sizes—from small startups to large enterprises—across industries like sales, marketing, real estate, finance, customer service, and more. Sales teams, marketers, support agents, and business owners rely on CRM systems to organize contacts, track interactions, automate workflows, and improve customer relationships.",
+    unique_1: "headingTwo",
+    unique_2: "collapseTwo"
+  },
+  {
+    query: "What integrations are available with Bitrix24 CRM?",
+    answer: "Bitrix24 integrates with popular email services (Gmail, Outlook), telephony providers, messengers (WhatsApp, Facebook Messenger), e-commerce platforms, and many third-party apps via REST API and Zapier. You can synchronize calendars, contacts, and automate data flows across tools.",
+    unique_1: "headingThree",
+    unique_2: "collapseThree"
+  }
+];
 
 function App() {
   const [showAuth, setShowAuth] = useState(false);
@@ -68,6 +88,7 @@ function App() {
     // Ensure page is at top on first render (fixes mobile jump-to-footer)
     window.scrollTo(0, 0);
   }, []);
+   const [mountStatus, setMountStatus] = useState(false);
 
   return (
     <BrowserRouter basename="/UDC_Test-Main">
@@ -79,10 +100,18 @@ function App() {
  <ScrollToTop />
                 <Routes>
                     {/* Landing is now the default page on site open */}
-                    <Route path="/" element={<Landing />} />
+                    <Route path="/" element={<>
+                    <Landing />
+                    <FeatureSlider />
+                    <DepartmentSection onPopupOpen={() => popupFormRef.current.open()}/>
+                     <Testimonial />
+                     <Pricing status={mountStatus} />
+                     <Technology />
+                      <FAQ faq={homeFAQ} />
+                    </>} />
 
                     {/* Preserve the previous homepage composition at /home */}
-                    <Route
+                    {/* <Route
                         path="/home"
                         element={
                             <>
@@ -97,7 +126,7 @@ function App() {
                                 <WhyChooseUs onPopupOpen={() => popupFormRef.current.open()} />
                             </>
                         }
-                    />
+                    /> */}
 
 {/*           <Route path="/Bitrix24CRM" element={<Bitrix24CRM />} /> */}
           <Route path="/pricing" element={<Pricing />} />

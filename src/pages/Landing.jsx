@@ -17,41 +17,23 @@ import glass from "../assets/theme/glass.jpg"
 
 import css from './Landing.module.css'
 
-import FeatureSlider from '../components/FeatureSlider'
-import Testimonial from '../components/Testimonial'
-import Pricing from '../components/Pricing'
-import Technology from '../components/Technology'
-import FAQ from '../components/FAQ'
+// import FeatureSlider from '../components/FeatureSlider'
+// import Testimonial from '../components/Testimonial'
+// import Pricing from '../components/Pricing'
+// import Technology from '../components/Technology'
+// import FAQ from '../components/FAQ'
+// import DepartmentSection from "../components/DepartmentSection"
 
 const slides = [
   themeBack, themeBack2, themeBack3, themeBack4,
   themeBack5, themeBack6, themeBack7, back1
 ];
 
-const homeFAQ = [
-  {
-    query: "What is CRM",
-    answer: "CRM is a Customer Relationship Management Software",
-    unique_1: "headingOne",
-    unique_2: "collapseOne"
-  },
-  {
-    query: "Who uses CRM software?",
-    answer: "CRM software is used by businesses of all sizes—from small startups to large enterprises—across industries like sales, marketing, real estate, finance, customer service, and more. Sales teams, marketers, support agents, and business owners rely on CRM systems to organize contacts, track interactions, automate workflows, and improve customer relationships.",
-    unique_1: "headingTwo",
-    unique_2: "collapseTwo"
-  },
-  {
-    query: "What integrations are available with Bitrix24 CRM?",
-    answer: "Bitrix24 integrates with popular email services (Gmail, Outlook), telephony providers, messengers (WhatsApp, Facebook Messenger), e-commerce platforms, and many third-party apps via REST API and Zapier. You can synchronize calendars, contacts, and automate data flows across tools.",
-    unique_1: "headingThree",
-    unique_2: "collapseThree"
-  }
-];
+
 
 
 const Landing = () => {
-  const [mountStatus, setMountStatus] = useState(false);
+ 
 
   // useEffect(() => {
   //   setMountStatus(false)
@@ -132,9 +114,6 @@ const Landing = () => {
         </div>
       </section>
 
-
-
-
       {/* ⭐ GROWTH SECTION */}
       <section className={css.growthSection} style={{ backgroundImage: `url(${glass})` }}>
         <div className={css.growthGlass}>
@@ -184,11 +163,13 @@ const Landing = () => {
 
 
       {/* ⭐ OTHER SECTIONS */}
-      <FeatureSlider />
-      <Testimonial />
-      <Pricing status={mountStatus} />
-      <Technology />
-      <FAQ faq={homeFAQ} />
+      
+      
+
+     
+      
+      
+     
 
     </div>
   );
